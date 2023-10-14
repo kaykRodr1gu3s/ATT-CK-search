@@ -61,37 +61,51 @@ def tactics():
     return name_id
 
 tactics_list  = tactics()
+
 print(f'The tactics are -> {tactics_list}')
 print('=' * 30)
 print()
-options_id = []
-for num in enumerate(tactics_list):
-    options_id.append(num)
 
 
+def list_sub_techniques():
+    options_id = []
+    for num in enumerate(tactics_list):
+        options_id.append(num)
+
+    print('This are all the tactics available')
+
+    for option in options_id:
+        print(option)
+    print()
+
+    tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
+    
+    req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{tactics_list[tactic_option].strip()}')
+    bs_tecnique = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
+    table = bs_tecnique.find_all('a', class_='subtechnique-table-item')
+
+    ids = []
+    name = []
+
+    for k,v in enumerate(table):
+        if k % 2 ==0:
+            ids.append(v.text.strip())
+        else:
+            name.append(v.text)
+
+    sub_tecniques = zip(ids, name)
+
+    for c in sub_tecniques:
+        print(c)
+
+    return ids
 
 
-print('This are all the tactics available')
-for option in options_id:
-    print(option)
-print()
-tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
+ids = list_sub_techniques()
+Sub_techniques_option = int(input('which of the Sub-techniques you wanna see ? '))
 
-req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{tactics_list[tactic_option].strip()}')
+sub_id = ids[Sub_techniques_option]
 
-bs_tecnique = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
 
-table = bs_tecnique.find_all('a', class_='subtechnique-table-item')
-ids = []
-name = []
-
-for k,v in enumerate(table):
-    if k % 2 ==0:
-        ids.append(v.text)
-    else:
-        name.append(v.text)
-
-sub_tecniques = zip(ids, name)
-
-for c in sub_tecniques:
-    print(c)
+Sub_techniques_page = requests.get(f'https://attack.mitre.org/techniques/{sub_id[:5]}/{sub_id[6:]}/')
+print(Sub_techniques_page)
