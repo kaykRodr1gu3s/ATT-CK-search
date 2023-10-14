@@ -66,10 +66,14 @@ print(f'The tactics are -> {name_id}')
 for num in enumerate(name_id):
     options_id.append(num)
 
-tactics_options = zip(options_id, name_id)
-print('=' * 30)
+
+
+
 print('For see the tactics information paste the ID bellow')
-for option in tactics_options:
+for option in options_id:
     print(option)
 
+tactic_option = int(input('Which of the options you want? '))
 
+req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{name_id[tactic_option].strip()}')
+print(req_sub_technique)
