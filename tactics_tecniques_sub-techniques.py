@@ -42,38 +42,56 @@ def options():
 
     return choice
 
-
-req = requests.get(f'https://attack.mitre.org{getting_tactics()[options()]}')
-
-
-beuaty_soup = bs4.BeautifulSoup(req.content, 'html.parser')
-Table = beuaty_soup.find('table', {'class': 'table-techniques'})
-
-headers = []
-bs = Table.find_all('td', colspan='2')
-headers.append(bs[0])
-del bs[0]
+def tactics():
+    req = requests.get(f'https://attack.mitre.org{getting_tactics()[options()]}')
 
 
-name_id = []
+    beuaty_soup = bs4.BeautifulSoup(req.content, 'html.parser')
+    Table = beuaty_soup.find('table', {'class': 'table-techniques'})
+
+    headers = []
+    bs = Table.find_all('td', colspan='2')
+    headers.append(bs[0])
+    del bs[0]
+
+
+    name_id = []
+    for c in bs:
+        name_id.append(c.text.replace('\n', ''))
+    return name_id
+
+tactics_list  = tactics()
+print(f'The tactics are -> {tactics_list}')
+print('=' * 30)
+print()
 options_id = []
-for c in bs:
-    name_id.append(c.text.replace('\n', ''))
-    
-print(f'The tactics are -> {name_id}')
-
-
-for num in enumerate(name_id):
+for num in enumerate(tactics_list):
     options_id.append(num)
 
 
 
 
-print('For see the tactics information paste the ID bellow')
+print('This are all the tactics available')
 for option in options_id:
     print(option)
+print()
+tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
 
-tactic_option = int(input('Which of the options you want? '))
+req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{tactics_list[tactic_option].strip()}')
 
-req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{name_id[tactic_option].strip()}')
-print(req_sub_technique)
+bs_tecnique = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
+
+table = bs_tecnique.find_all('a', class_='subtechnique-table-item')
+ids = []
+name = []
+
+for k,v in enumerate(table):
+    if k % 2 ==0:
+        ids.append(v.text)
+    else:
+        name.append(v.text)
+
+sub_tecniques = zip(ids, name)
+
+for c in sub_tecniques:
+    print(c)
