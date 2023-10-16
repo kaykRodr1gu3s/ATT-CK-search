@@ -69,6 +69,9 @@ print()
 
 def list_sub_techniques():
     options_id = []
+    ids = []
+    name = []
+
     for num in enumerate(tactics_list):
         options_id.append(num)
 
@@ -76,16 +79,12 @@ def list_sub_techniques():
 
     for option in options_id:
         print(option)
-    print()
 
     tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
     
     req_sub_technique = requests.get(f'https://attack.mitre.org/techniques/{tactics_list[tactic_option].strip()}')
     bs_tecnique = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
     table = bs_tecnique.find_all('a', class_='subtechnique-table-item')
-
-    ids = []
-    name = []
 
     for k,v in enumerate(table):
         if k % 2 ==0:
@@ -97,6 +96,8 @@ def list_sub_techniques():
 
     for c in sub_tecniques:
         print(c)
+    
+    print(ids)
 
     return ids
 
@@ -116,6 +117,7 @@ def sub_techniques_content():
 
 
     descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
+    print('foi descripition')
     print('=' * 30)
     print(descripition.text)
 
