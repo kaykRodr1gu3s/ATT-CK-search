@@ -142,14 +142,20 @@ class listing_tactics:
         for key, value in enumerate(header):
             mitigation[header[key]] = tbody[key]
         print(mitigation)
-# getting_tactics,options,tactics,list_sub_techniques, sub_techniques_content
+
+        return mitigation
+
+
     def main(self):
 
         getting_tactics = self.getting_tactics()
         option = self.options()
         tactics = self.tactics(getting_tactics, option)
         list_sub_techniques = self.list_sub_techniques(tactics)
-        sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
+        if list_sub_techniques is None:
+            print('This technique dont have sub-techniques')    
+        else:
+            sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
       
 
 Listing_all = listing_tactics()
