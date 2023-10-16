@@ -153,6 +153,7 @@ class listing_tactics:
         sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
       
 
-a = listing_tactics()
+Listing_all = listing_tactics()
 
-a.main()
+
+Listing_all.main()
