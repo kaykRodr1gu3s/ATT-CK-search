@@ -104,7 +104,6 @@ class listing_tactics:
             return ids
         
         except:
-            print('tem poha nenhuma la')
             return None
 
 
