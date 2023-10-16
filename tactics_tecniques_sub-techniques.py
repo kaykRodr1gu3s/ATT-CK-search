@@ -153,9 +153,11 @@ class listing_tactics:
         tactics = self.tactics(getting_tactics, option)
         list_sub_techniques = self.list_sub_techniques(tactics)
         if list_sub_techniques is None:
-            print('This technique dont have sub-techniques')    
+            print('This technique dont have sub-techniques')
+            print('=' * 30)    
         else:
             sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
+        
       
 
 Listing_all = listing_tactics()
