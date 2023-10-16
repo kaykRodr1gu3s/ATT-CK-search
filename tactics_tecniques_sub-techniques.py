@@ -107,5 +107,34 @@ Sub_techniques_option = int(input('which of the Sub-techniques you wanna see ? '
 sub_id = ids[Sub_techniques_option]
 
 
-Sub_techniques_page = requests.get(f'https://attack.mitre.org/techniques/{sub_id[:5]}/{sub_id[6:]}/')
-print(Sub_techniques_page)
+
+def sub_techniques_content():
+    mitigation = {}
+    Sub_techniques_page = requests.get(f'https://attack.mitre.org/techniques/{sub_id[:5]}/{sub_id[6:]}/')
+
+    bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
+
+
+    descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
+    print('=' * 30)
+    print(descripition.text)
+
+    bs = bs4_sub_techniques.find('table',{'class': 'table table-bordered table-alternate mt-2'})
+    header = bs.find('tr').text
+    header = header.replace('\n', ' ')
+    header = header.split(' ')
+    del header[0]
+    del header[-1]
+    
+    bs_req_content = bs4_sub_techniques
+    tbody = bs_req_content.find_all('tbody')
+    tbody = tbody[1].text.strip()
+    tbody = tbody.replace('\n\n\n', '#')
+    tbody = tbody.split('#')
+    for key, value in enumerate(header):
+        mitigation[header[key]] = tbody[key]
+
+    print(mitigation)
+
+
+sub_techniques_content()
