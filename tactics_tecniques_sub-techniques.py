@@ -84,75 +84,74 @@ class listing_tactics:
         print('=' * 30)
         tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
         print('=' * 30)
-
         req_sub_technique = requests.get(f'{self.link_base}/techniques/{tactics[tactic_option].strip()}')
-        bs_tecnique = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
+
+        bs = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
+        table = bs.find('table', class_='table table-bordered')
         try:
-            table = bs_tecnique.find_all('a', class_='subtechnique-table-item')
- 
-
-
-            for k,v in enumerate(table):
-                if k % 2 ==0:
-                    ids.append(v.text.strip())
+            hrefs = table.find_all('a',href = re.compile(r'/techniques/T[\d]+/[\d]+/'))
+            
+            for key, value in enumerate(hrefs):
+                if key % 2 ==0:
+                    ids.append(value.text.strip())
                 else:
-                    name.append(v.text)
-    
-            sub_tecniques = zip(ids, name)
-    
-            for c in sub_tecniques:
-                print(c)
-                
-            return ids
+                    name.append(value.text.strip())
 
-        except:
-            print("This tactics don't have sub-techniques")
-            ids = None
+            concat = zip(ids, name)
+
+            for sub_tech in concat:
+                print(sub_tech)
             return ids
+        
+        except:
+            print('tem poha nenhuma la')
+            return None
 
 
     def sub_techniques_content(self, list_sub_techniques) -> dict:
-        if list_sub_techniques in None:
-            return None
-        else:
-            mitigation = {}
-            print('=' * 30)
-            Sub_techniques_option = int(input('which of the Sub-techniques you wanna see ? '))
-            print('=' * 30)
-            sub_id = list_sub_techniques[Sub_techniques_option]
-            Sub_techniques_page = requests.get(f'{self.link_base}/techniques/{sub_id[:5]}/{sub_id[6:]}/')
+        mitigation = {}
+        
+        print('=' * 30)
+        
+        Sub_techniques_option = int(input('which of the Sub-techniques you wanna see ? '))
+        
+        print('=' * 30)
+        
+        sub_id = list_sub_techniques[Sub_techniques_option]
+        Sub_techniques_page = requests.get(f'{self.link_base}/techniques/{sub_id[:5]}/{sub_id[6:]}/')
+        bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
+        descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
+        
+        print('foi descripition')
+        print('=' * 30)
+        print(descripition.text)
+        
+        bs = bs4_sub_techniques.find('table',{'class': 'table table-bordered table-alternate mt-2'})
+        header = bs.find('tr').text
+        header = header.replace('\n', ' ')
+        header = header.split(' ')
+        
+        del header[0]
+        del header[-1]
+        
+        bs_req_content = bs4_sub_techniques
+        tbody = bs_req_content.find_all('tbody')
+        tbody = tbody[1].text.strip()
+        tbody = tbody.replace('\n\n\n', '#')
+        tbody = tbody.split('#')
 
-            bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
-
-
-            descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
-            print('foi descripition')
-            print('=' * 30)
-            print(descripition.text)
-
-            bs = bs4_sub_techniques.find('table',{'class': 'table table-bordered table-alternate mt-2'})
-            header = bs.find('tr').text
-            header = header.replace('\n', ' ')
-            header = header.split(' ')
-            del header[0]
-            del header[-1]
-            
-            bs_req_content = bs4_sub_techniques
-            tbody = bs_req_content.find_all('tbody')
-            tbody = tbody[1].text.strip()
-            tbody = tbody.replace('\n\n\n', '#')
-            tbody = tbody.split('#')
-            for key, value in enumerate(header):
-                mitigation[header[key]] = tbody[key]
-
-            print(mitigation)
+        for key, value in enumerate(header):
+            mitigation[header[key]] = tbody[key]
+        print(mitigation)
 # getting_tactics,options,tactics,list_sub_techniques, sub_techniques_content
     def main(self):
+
         getting_tactics = self.getting_tactics()
         option = self.options()
         tactics = self.tactics(getting_tactics, option)
         list_sub_techniques = self.list_sub_techniques(tactics)
         sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
+      
 
 a = listing_tactics()
 
