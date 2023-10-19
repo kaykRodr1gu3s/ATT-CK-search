@@ -188,19 +188,20 @@ save_file = str(input('Do you wanna save the results(tactic, technique and sub-t
 dirs = os.listdir()
 
 try:
-    os.mkdir('Mitre ATT&CK')
+    os.mkdir('Mitre_ATTCK')
 
+except:
+    print('The folder already exisxt')
 
-
-folder = os.getcwd() + 'Mitre ATT&CK'
+folder = os.getcwd() + '\\Mitre_ATTCK'
 
 
 
 
 
 if save_file in 'Yy':
-    with open(f'{folder}\\{Listing_all.tactic_name}.yml', 'w', newline='') as f:
+    with open(f'{folder}\\{Listing_all.tactic_name}.yaml', 'w', newline='') as f:
         yaml.dump(Listing_all.dict_for_yaml, f, default_flow_style=False)
 
 else:
-    print("You don't want to save the information in a yaml, the code will over")
+    print("You don't want to save the information in a yaml, the code over")
