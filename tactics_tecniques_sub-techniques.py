@@ -1,13 +1,16 @@
 import requests
 import re
 import bs4
-
+import yaml
+import os 
 
 class listing_tactics:
     def __init__(self):
         self.link_base = 'https://attack.mitre.org'
-
+        self.dict_for_yaml = {}
+        self.tactic_name = ''
     def getting_tactics(self) -> list:
+        
         tactics_link = []
 
         req = requests.get(f'{self.link_base}/tactics/enterprise/')
@@ -44,6 +47,8 @@ class listing_tactics:
         print()
         print(f'You choice the {name[choice].upper()} option')
         print()
+        self.tactic_name = name[choice]
+        self.dict_for_yaml['Tactic Name'] = name[choice]
 
         return choice
 
@@ -108,6 +113,7 @@ class listing_tactics:
 
 
     def sub_techniques_content(self, list_sub_techniques) -> dict:
+       
         mitigation = {}
         
         print('=' * 30)
@@ -121,9 +127,10 @@ class listing_tactics:
         bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
         descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
         
-        print('foi descripition')
+       
         print('=' * 30)
         print(descripition.text)
+        self.dict_for_yaml['descripition text'] = descripition.text.replace('\n', '')
         
         bs = bs4_sub_techniques.find('table',{'class': 'table table-bordered table-alternate mt-2'})
         header = bs.find('tr').text
@@ -147,22 +154,53 @@ class listing_tactics:
 
 
 
-
     def main(self):
 
         getting_tactics = self.getting_tactics()
         option = self.options()
         tactics = self.tactics(getting_tactics, option)
         list_sub_techniques = self.list_sub_techniques(tactics)
+
+        self.dict_for_yaml['Techniques'] = tactics
+        
+       
+
         if list_sub_techniques is None:
+            self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
             print('This technique dont have sub-techniques')
             print('=' * 30)    
         else:
             sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
-        
-      
+            self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
+            self.dict_for_yaml['Mitigation'] = sub_techniques_content 
 
+        print()
+        print()
+        
 Listing_all = listing_tactics()
 
 
 Listing_all.main()
+
+
+save_file = str(input('Do you wanna save the results(tactic, technique and sub-technique etc...)\ny = YES\nn = NO\nTYPE HERE -> :'))
+
+dirs = os.listdir()
+
+try:
+    os.mkdir('Mitre ATT&CK')
+
+
+
+folder = os.getcwd() + 'Mitre ATT&CK'
+
+
+
+
+
+if save_file in 'Yy':
+    with open(f'{folder}\\{Listing_all.tactic_name}.yml', 'w', newline='') as f:
+        yaml.dump(Listing_all.dict_for_yaml, f, default_flow_style=False)
+
+else:
+    print("You don't want to save the information in a yaml, the code will over")
