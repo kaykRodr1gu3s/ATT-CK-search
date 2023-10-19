@@ -145,6 +145,8 @@ class listing_tactics:
 
         return mitigation
 
+    def detection():
+        pass
 
     def main(self):
 
