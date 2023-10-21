@@ -197,8 +197,6 @@ folder = os.getcwd() + '\\Mitre_ATTCK'
 
 
 
-
-
 if save_file in 'Yy':
     with open(f'{folder}\\{Listing_all.tactic_name}.yaml', 'w', newline='') as f:
         yaml.dump(Listing_all.dict_for_yaml, f, default_flow_style=False)
