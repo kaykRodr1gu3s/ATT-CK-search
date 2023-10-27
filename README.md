@@ -12,7 +12,7 @@ _se esta técnica possuir sub-tecnicas, será solicitado uma opção para fazer 
 
 _se a técnica não possuir sub-técnicas, o código ira finalizar_
 
-Quando o todas as opções(táticas, técnicas, sub-técnicas) forem finalizada, você terá um output em seu terminar, e será dada a opção de salvar este output em um arquivo .yaml.
+Quando o todas as opções(táticas, técnicas, e sub-técnicas) forem finalizada, você terá um output em seu terminal, e será dada a opção de salvar este output em um arquivo .yaml.
 
 
 ---
