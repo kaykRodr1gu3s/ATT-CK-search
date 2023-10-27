@@ -87,7 +87,7 @@ class listing_tactics:
         for option in options_id:
             print(option)
         print('=' * 30)
-        tactic_option = int(input('Which of the options you want to see the Sub-techniques ? '))
+        tactic_option = int(input('Which of the options you want to see the techniques ? '))
         print('=' * 30)
         req_sub_technique = requests.get(f'{self.link_base}/techniques/{tactics[tactic_option].strip()}')
 
@@ -123,6 +123,7 @@ class listing_tactics:
         print('=' * 30)
         
         sub_id = list_sub_techniques[Sub_techniques_option]
+        self.dict_for_yaml['sub-techniques'] = sub_id
         Sub_techniques_page = requests.get(f'{self.link_base}/techniques/{sub_id[:5]}/{sub_id[6:]}/')
         bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
         descripition = bs4_sub_techniques.find('div', {'class': 'description-body'})
@@ -166,12 +167,12 @@ class listing_tactics:
        
 
         if list_sub_techniques is None:
-            self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
+            # self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
             print('This technique dont have sub-techniques')
             print('=' * 30)    
         else:
             sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
-            self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
+            # self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
             self.dict_for_yaml['Mitigation'] = sub_techniques_content 
 
         print()
@@ -198,7 +199,7 @@ folder = os.getcwd() + '\\Mitre_ATTCK'
 
 
 if save_file in 'Yy':
-    with open(f'{folder}\\{Listing_all.tactic_name}.yaml', 'w', newline='') as f:
+    with open(f'{folder}\\example.yaml', 'w', newline='') as f:
         yaml.dump(Listing_all.dict_for_yaml, f, default_flow_style=False)
 
 else:
