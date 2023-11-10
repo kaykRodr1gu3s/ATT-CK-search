@@ -6,9 +6,12 @@ import os
 
 class listing_tactics:
     def __init__(self):
+        
         self.link_base = 'https://attack.mitre.org'
         self.dict_for_yaml = {}
         self.tactic_name = ''
+        self.technique_name = ''
+
     def getting_tactics(self) -> list:
         
         tactics_link = []
@@ -80,15 +83,21 @@ class listing_tactics:
         name = []
 
         for num in enumerate(tactics):
+            
             options_id.append(num)
 
         print('This are all the tactics available\n')
-
+        
         for option in options_id:
             print(option)
         print('=' * 30)
+        
         tactic_option = int(input('Which of the options you want to see the techniques ? '))
         print('=' * 30)
+
+        
+
+
         req_sub_technique = requests.get(f'{self.link_base}/techniques/{tactics[tactic_option].strip()}')
 
         bs = bs4.BeautifulSoup(req_sub_technique.content, 'html.parser')
@@ -123,6 +132,7 @@ class listing_tactics:
         print('=' * 30)
         
         sub_id = list_sub_techniques[Sub_techniques_option]
+        self.technique_name = sub_id
         self.dict_for_yaml['sub-techniques'] = sub_id
         Sub_techniques_page = requests.get(f'{self.link_base}/techniques/{sub_id[:5]}/{sub_id[6:]}/')
         bs4_sub_techniques = bs4.BeautifulSoup(Sub_techniques_page.content, 'html.parser')
@@ -167,12 +177,11 @@ class listing_tactics:
        
 
         if list_sub_techniques is None:
-            # self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
             print('This technique dont have sub-techniques')
             print('=' * 30)    
         else:
             sub_techniques_content = self.sub_techniques_content(list_sub_techniques)
-            # self.dict_for_yaml['Sub-Techniques'] = list_sub_techniques
+            
             self.dict_for_yaml['Mitigation'] = sub_techniques_content 
 
         print()
@@ -188,18 +197,16 @@ save_file = str(input('Do you wanna save the results(tactic, technique and sub-t
 
 dirs = os.listdir()
 
-try:
-    os.mkdir('Mitre_ATTCK')
 
-except:
-    print('The folder already exisxt')
 
-folder = os.getcwd() + '\\Mitre_ATTCK'
+folder = os.getcwd() + '\\Windows\\Files'
+
+
 
 
 
 if save_file in 'Yy':
-    with open(f'{folder}\\example.yaml', 'w', newline='') as f:
+    with open(f'{folder}\\{Listing_all.technique_name}.yaml', 'w', newline='') as f:
         yaml.dump(Listing_all.dict_for_yaml, f, default_flow_style=False)
 
 else:
