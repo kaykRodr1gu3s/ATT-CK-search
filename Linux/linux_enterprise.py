@@ -77,12 +77,19 @@ def tactics():
     name_id = []
       
     for c in bs:
-        name_id.append(c.text.replace('\n', ''))
+        name_id.append(c.text.replace('\n', '').strip())
     print(f'The tactics are -> {name_id}')
     print('=' * 30)
     print()
 
     return name_id
 
+def technique_content():
+    tatic = tactics()
+    option = int(input('Which techniques do you wanna see more: '))
 
-option = int(input('qual c quer'))
+    req = requests.get(f'https://attack.mitre.org/techniques/{tatic[option]}/')
+    print(req)
+
+
+technique_content()
