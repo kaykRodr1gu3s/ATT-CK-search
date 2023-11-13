@@ -2,7 +2,7 @@ import requests
 import bs4
 import os 
 import re
-
+import csv
 
 
 req = requests.get('https://attack.mitre.org/matrices/enterprise/linux/')
@@ -30,11 +30,31 @@ for zip in zipped:
     print(zip)
 
 print('-=' * 20)
-choice = int(input('qual das opçoes vc quer ?'))
+# choice = int(input('qual das opçoes vc quer ?'))
 print('-=' * 20)
 
 
-count_techniques = bs.find('div', {'class': 'matrix-container p-3'})
-count_techniques = count_techniques.find_all('td', {'class' : 'tactic count'})
+tatic_counters = bs.find_all('td', class_='tactic count')
+a = []
 
-print(count_techniques)
+for tatic_count in tatic_counters:
+    if len(a) < len(tatic_names):
+        a.append(tatic_count.text.replace(u'\xa0', u' ').replace('\n', '').strip())
+    else:
+        break
+
+
+
+dicts = {}
+for k,v in enumerate(tatic_names):
+    dicts[v] = a[k]
+
+
+current = os.getcwd() + '\\Linux'
+print(current)
+with open(f'{current}\\Linux_counter_tatics.csv', 'w' , newline='') as f:
+    # for c in dicts:
+    csv_writter = csv.writer(f)
+    csv_writter.writerow(dicts.keys())
+
+    csv_writter.writerow(dicts.values())
