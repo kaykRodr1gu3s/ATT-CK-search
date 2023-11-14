@@ -3,27 +3,45 @@ import bs4
 import os
 import csv
 
-def writer(option):
 
+class Writer:
+    def __init__(self) -> None:
+        self.cloud = ['office365', 'azuread', 'googleworkspace', 'saas', 'iaas']
+        self.link_base = 'https://attack.mitre.org/matrices/enterprise/'
 
-    os.chdir(f'{os.getcwd()}\\Enterprise')
-    op = option
+    def formating_requests(self, option):
     
-    
-    if op in 'cloud':
-        current = os.getcwd() + '\\Matrices\\cloud'
-   
-        cloud_plataform = ['office365', 'azuread', 'googleworkspace', 'saas', 'iaas']
-        for plataform in cloud_plataform:
-            req = requests.get(f'https://attack.mitre.org/matrices/enterprise/cloud/{plataform}/')
+        if option in 'cloud_plataforms':
+            cloud = []
+            for c in self.cloud:
+                
+                cloud.append(f'{self.link_base}cloud/{c}/')
 
-            print(req)
+            return cloud
+        else:
+            return [f'{self.link_base}{option}/']
+
+    def code(self):
+        name = ['pre', 'windows', 'macos','cloud','cloud_plataforms', 'network', 'containers']
+        options = [0, 1, 2, 3, 4, 5, 6]
+
+        zipped = zip(options, name)
+
+        for zipp in zipped:
+            print(zipp)
 
 
+        option = int(input('Which option do you wanna see: '))
+        main = Writer()
+        a = main.formating_requests(name[option])
+
+        current = os.getcwd() + '\\Matrices'
+        
+        for key,v in enumerate(a):
+
+            req = requests.get(v)
             bs = bs4.BeautifulSoup(req.content, 'html.parser')
-
             table = bs.find('table', {'class': 'matrix flat'})
-
             tactics_name = table.find_all('td', {'class': 'tactic name'})
 
             names = []
@@ -32,75 +50,26 @@ def writer(option):
             for c in tactics_name:
                 names.append(c.text)
 
-
             tech_count = table.find_all('td', {'class': 'tactic count'})
 
             for c in tech_count:
                 count.append(c.text.replace(u'\xa0', u' ').replace('\n', '').strip())
 
             dict_names = {} 
-
             for k, v in enumerate(names):
                 dict_names[names[k]] = count[k]
 
+            if len(a) > 1:
+                current = os.getcwd() + '\\Matrices\\Cloud_plataforms'
+                with open(f'{current}\\{self.cloud[key]}.csv', 'w', newline='') as f:
+                    csv_writer = csv.writer(f)
+                    csv_writer.writerow(dict_names.keys())
+                    csv_writer.writerow(dict_names.values())
 
-
-            with open(f'{current}\\{plataform}.csv', 'w', newline='') as f:
+            with open(f'{current}\\{name[option]}.csv', 'w', newline='') as f:
                 csv_writer = csv.writer(f)
                 csv_writer.writerow(dict_names.keys())
                 csv_writer.writerow(dict_names.values())
-
-
-
-    else:
-        current = os.getcwd() + '\\Matrices'
-
-        req = requests.get(f'https://attack.mitre.org/matrices/enterprise/{option}/')
-
-        print(req)
-
-
-        bs = bs4.BeautifulSoup(req.content, 'html.parser')
-
-        table = bs.find('table', {'class': 'matrix flat'})
-
-        tactics_name = table.find_all('td', {'class': 'tactic name'})
-
-        names = []
-        count = []
-
-        for c in tactics_name:
-            names.append(c.text)
-
-
-        tech_count = table.find_all('td', {'class': 'tactic count'})
-
-        for c in tech_count:
-            count.append(c.text.replace(u'\xa0', u' ').replace('\n', '').strip())
-
-        dict_names = {} 
-
-        for k, v in enumerate(names):
-            dict_names[names[k]] = count[k]
-
-
-        with open(f'{current}\\{option}.csv', 'w', newline='') as f:
-            csv_writer = csv.writer(f)
-            csv_writer.writerow(dict_names.keys())
-            csv_writer.writerow(dict_names.values())
-
-
-name = ['pre', 'windows', 'macos', 'cloud', 'network', 'containers']
-options = [0, 1, 2, 3, 4, 5]
-
-zipped = zip(options, name)
-
-
-for zipp in zipped:
-    print(zipp)
-
-print('-=' * 20)
-option = int(input('Which do you wanna see ? '))
-print('-=' * 20)
-
-writer(name[option])
+    
+instance = Writer()
+instance.code()
