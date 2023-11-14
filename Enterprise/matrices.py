@@ -46,5 +46,6 @@ def Linux():
         csv_writer.writerow(dict_names.values())
 
 
+Linux()
 
 
