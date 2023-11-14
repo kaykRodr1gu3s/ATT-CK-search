@@ -30,12 +30,12 @@ class Writer:
         for zipp in zipped:
             print(zipp)
 
-
+        print('-=' * 20)
         option = int(input('Which option do you wanna see: '))
         main = Writer()
         a = main.formating_requests(name[option])
 
-        current = os.getcwd() + '\\Matrices'
+        current = os.getcwd() + '\\Enterprise\\Matrices'
         
         for key,v in enumerate(a):
 
@@ -60,7 +60,7 @@ class Writer:
                 dict_names[names[k]] = count[k]
 
             if len(a) > 1:
-                current = os.getcwd() + '\\Matrices\\Cloud_plataforms'
+                current = os.getcwd() + '\\Enterprise\\Matrices\\Cloud_plataforms'
                 with open(f'{current}\\{self.cloud[key]}.csv', 'w', newline='') as f:
                     csv_writer = csv.writer(f)
                     csv_writer.writerow(dict_names.keys())
