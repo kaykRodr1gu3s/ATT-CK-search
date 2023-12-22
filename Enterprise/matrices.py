@@ -4,6 +4,7 @@ import os
 import csv
 
 
+
 class Writer:
     def __init__(self) -> None:
         self.cloud = ['office365', 'azuread', 'googleworkspace', 'saas', 'iaas']
