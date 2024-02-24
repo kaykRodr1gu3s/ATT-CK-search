@@ -1,32 +1,47 @@
+Certainly! Here's the README in markdown format:
+
+markdown
+
 # ATT&CK-search
 
-Pesquisa na matrize enterprise: táticas, técnicas e sub-técnicas no MITRE ATT&CK.
+## Overview
 
----
-## Pré-requisitos
-será necessário instalar algumas bibliotecas python: bs4, request e PyYAML
+This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix. It provides a simple interface to explore and retrieve information about cybersecurity attack techniques.
+
+## Prerequisites
+
+Before using the code, make sure to install the required Python libraries using the following commands:
+
 ```bash
 pip install bs4
 pip install PyYAML
 pip install requests
 ```
 
-# Como usar 
-Para usar este código é muito simples, todas as instalações já estão feitas.
-Para começar a pesquisa, execute o código 
+How to Use
 
- 
- * selecione a tática desejada para a pesquisa
- * selecione a técnica desejada
- 
- _se esta técnica possuir sub-tecnicas, será solicitado uma opção para fazer uma pesquisa nesta sub-técnicas_
-   * selecione a sub-técnica
- 
- _se a técnica não possuir sub-técnicas, o código ira finalizar_
+execute the code.
 
-Quando o todas as opções(táticas, técnicas, e sub-técnicas) forem finalizada, você terá um output em seu terminal, e será dada a opção de salvar este output em um arquivo .yaml.
+Select the desired tactic for the search.
+Choose the technique within the selected tactic.
++ if the technique has sub-techniques, you will be prompted to choose a sub-technique.
+
++ Select the sub-technique.
+  
++ If the technique has no sub-techniques, the code will finish.
+
+Once all options (tactics, techniques, and sub-techniques) are finalized, the output will be displayed in your terminal. You will also have the option to save this output to a YAML file.
+Example YAML File
+
+For an example of a YAML file, click here.
+Contribution
+
+Feel free to contribute to this project by creating issues or submitting pull requests. Your contributions are highly appreciated.
+License
+
+This project is licensed under the MIT License.
+
+css
 
 
----
-
-Para ver um exemplo de arquivo .yaml [clique aqui](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Mitre_ATTCK/example.yaml)
+Feel free to customize it further based on your preferences or specific project details!
