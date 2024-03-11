@@ -1,6 +1,3 @@
-
-markdown
-
 # ATT&CK-search
 
 ## Overview
