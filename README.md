@@ -1,4 +1,3 @@
-Certainly! Here's the README in markdown format:
 
 markdown
 
