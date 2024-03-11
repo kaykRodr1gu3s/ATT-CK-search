@@ -1,10 +1,20 @@
 # ATT&CK-search
-
 ## Overview
 
-This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix. It provides a simple interface to explore and retrieve information about cybersecurity attack techniques.
 
-## Prerequisites
+This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix.
+
+---
+
+### Index
+1 - [Overview](#Overview)
+
+2 - [Requisites](#Requisites)
+
+3 - [How to use](#How-to-use)
+
+
+### Requisites
 
 Before using the code, make sure to install the required Python libraries using the following commands:
 
@@ -14,30 +24,35 @@ pip install PyYAML
 pip install requests
 ```
 
-How to Use
+---
 
-execute the code.
+### How to Use
 
-Select the desired tactic for the search.
-Choose the technique within the selected tactic.
-+ if the technique has sub-techniques, you will be prompted to choose a sub-technique.
+After to execute the code:
 
-+ Select the sub-technique.
+* Select the desired tactic for the search.
+* Choose the technique within the selected tactic.
++ + if the technique has sub-techniques, you will be prompted to choose a sub-technique.
+
++ + Select the sub-technique.
   
 + If the technique has no sub-techniques, the code will finish.
 
 Once all options (tactics, techniques, and sub-techniques) are finalized, the output will be displayed in your terminal. You will also have the option to save this output to a YAML file.
-Example YAML File
-
-For an example of a YAML file, click here.
-Contribution
-
-Feel free to contribute to this project by creating issues or submitting pull requests. Your contributions are highly appreciated.
-License
-
-This project is licensed under the MIT License.
-
-css
+[Example](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Enterprise/tactics/example.yaml) YAML File
 
 
-Feel free to customize it further based on your preferences or specific project details!
+### Contribution
+ 1. Fork the repository.
+ 2. Create a branch for your contribution: `git checkout -b feature-nova`.
+ 3. Make the desired changes and commit: `git commit -m "Add new functionality"`.
+ 4. Push to your branch: `git push origin new-feature`.
+ 5. Open a pull request.
+
+
+## Contact
+
+- Linkedin: [Kayk Rodrigues](https://www.linkedin.com/in/kayk-rodrigues-504a03273)
+- Telegram: [Kayk Rodrigues](https://t.me/kaykRodrigues)
+
+
