@@ -199,7 +199,7 @@ dirs = os.listdir()
 
 
 
-folder = os.getcwd() + '\\Enterprise\\tactics'
+folder = os.getcwd() + '\\Enterprise\\Search\\Tactic'
 
 
 
