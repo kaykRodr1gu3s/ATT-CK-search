@@ -2,7 +2,7 @@
 ## Overview
 
 
-This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix.
+This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix. You can see the quantity of tactic in each matrix.
 
 ---
 
@@ -11,8 +11,11 @@ This tool enables you to search for tactics, techniques, and sub-techniques in t
 
 2 - [Requisites](#Requisites)
 
-3 - [How to use](#How-to-use)
+3 - [Usage](#Usage)
 
+4 - [Contribution](#Contribution)
+
+5 - [Contact](#Contact)
 
 ### Requisites
 
@@ -26,9 +29,11 @@ pip install requests
 
 ---
 
-### How to Use
+### Usage
 
-After to execute the code:
+The [ATTCK-search](https://github.com/kaykRodr1gu3s/ATTCK-search) has the options that allow you count the quantity of techniques in all [enterprise matrix](https://attack.mitre.org/matrices/enterprise/). The other option, is the [search](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Search), that allow you to search all the tactic and techniques, if have sub-techniques, you can search it through the terminal.        
+
+#### [Tactic](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/tactics)
 
 * Select the desired tactic for the search.
 * Choose the technique within the selected tactic.
@@ -41,6 +46,17 @@ After to execute the code:
 Once all options (tactics, techniques, and sub-techniques) are finalized, the output will be displayed in your terminal. You will also have the option to save this output to a YAML file.
 [Example](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Enterprise/tactics/example.yaml) YAML File
 
+#### [Matrix](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices)
+
+The [Enterprise Matrix](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices) work with inputs in the terminal. 
+
+
+All the files is saved in csv format, the [windows.csv](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Enterprise/Matrices/windows.csv) is the example. The cloud is in a diffent folder, the [office365.csv](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices/Cloud_plataforms) is the example.
+
+
+
+
+---
 
 ### Contribution
  1. Fork the repository.
