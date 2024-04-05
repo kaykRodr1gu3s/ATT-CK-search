@@ -1,0 +1,12 @@
+Tactic Name: Defense Evasion
+Description:
+- "The adversary is trying to avoid being detected.Defense Evasion consists of techniques\
+  \ that adversaries use to avoid detection throughout their compromise. Techniques\
+  \ used for defense evasion include uninstalling/disabling security software or obfuscating/encrypting\
+  \ data and scripts. Adversaries also leverage and abuse trusted processes to hide\
+  \ and masquerade their malware. Other tactics\u2019 techniques are cross-listed\
+  \ here when those techniques include the added benefit of subverting defenses. "
+Information:
+- 'ID: TA0005'
+- Created:17 October 2018
+- Last Modified:19 July 2019
