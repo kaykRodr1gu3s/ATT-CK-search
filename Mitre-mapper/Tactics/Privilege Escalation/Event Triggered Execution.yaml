@@ -1,0 +1,35 @@
+Name: Event Triggered Execution
+Tactic: Privilege Escalation
+Description:
+  Description:
+  - 'Adversaries may establish persistence and/or elevate privileges using system
+    mechanisms that trigger execution based on specific events. Various operating
+    systems have means to monitor and subscribe to events such as logons or other
+    user activity such as running specific applications/binaries. Cloud environments
+    may also support various functions and services that monitor and can be invoked
+    in response to specific cloud events.[1][2][3]Adversaries may abuse these mechanisms
+    as a means of maintaining persistent access to a victim via repeatedly executing
+    malicious code. After gaining access to a victim system, adversaries may create/modify
+    event triggers to point to malicious content that will be executed whenever the
+    event trigger is invoked.[4][5][6]Since the execution can be proxied by an account
+    with higher permissions, such as SYSTEM or service accounts, an adversary may
+    be able to abuse these triggered execution mechanisms to escalate their privileges. '
+Information:
+  Sub-techniques:
+  - T1546.001
+  - T1546.002
+  - T1546.003
+  - T1546.004
+  - T1546.005
+  - T1546.006
+  - T1546.007
+  - T1546.008
+  - T1546.009
+  - T1546.010
+  - T1546.011
+  - T1546.012
+  - T1546.013
+  - T1546.014
+  - T1546.015
+  - T1546.016
+  Tactic: Privilege Escalation

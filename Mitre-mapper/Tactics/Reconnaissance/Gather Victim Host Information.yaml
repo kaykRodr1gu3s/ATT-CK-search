@@ -1,0 +1,24 @@
+Name: Gather Victim Host Information
+Tactic: Reconnaissance
+Description:
+  Description:
+  - 'Adversaries may gather information about the victim''s hosts that can be used
+    during targeting. Information about hosts may include a variety of details, including
+    administrative data (ex: name, assigned IP, functionality, etc.) as well as specifics
+    regarding its configuration (ex: operating system, language, etc.).Adversaries
+    may gather this information in various ways, such as direct collection actions
+    via Active Scanning or Phishing for Information. Adversaries may also compromise
+    sites then include malicious content designed to collect host information from
+    visitors.[1] Information about hosts may also be exposed to adversaries via online
+    or other accessible data sets (ex: Social Media or Search Victim-Owned Websites).
+    Gathering this information may reveal opportunities for other forms of reconnaissance
+    (ex: Search Open Websites/Domains or Search Open Technical Databases), establishing
+    operational resources (ex: Develop Capabilities or Obtain Capabilities), and/or
+    initial access (ex: Supply Chain Compromise or External Remote Services).'
+Information:
+  Sub-techniques:
+  - T1592.001
+  - T1592.002
+  - T1592.003
+  - T1592.004
+  Tactic: Reconnaissance

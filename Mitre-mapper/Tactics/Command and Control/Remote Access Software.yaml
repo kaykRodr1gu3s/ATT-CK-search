@@ -1,0 +1,21 @@
+Name: Remote Access Software
+Tactic: Command and Control
+Description:
+  Description:
+  - An adversary may use legitimate desktop support and remote access software to
+    establish an interactive command and control channel to target systems within
+    networks. These services, such as VNC, Team Viewer, AnyDesk, ScreenConnect, LogMein,
+    AmmyyAdmin, and other remote monitoring and management (RMM) tools, are commonly
+    used as legitimate technical support software and may be allowed by application
+    control within a target environment.[1][2][3]Remote access software may be installed
+    and used post-compromise as an alternate communications channel for redundant
+    access or as a way to establish an interactive remote desktop session with the
+    target system. They may also be used as a component of malware to establish a
+    reverse connection or back-connect to a service or adversary controlled system.Adversaries
+    may similarly abuse response features included in EDR and other defensive tools
+    that enable remote access.Installation of many remote access software may also
+    include persistence (e.g., the software's installation routine creates a Windows
+    Service).
+Information:
+  Sub-techniques: []
+  Tactic: Command and Control

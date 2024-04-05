@@ -1,0 +1,42 @@
+Name: Steal or Forge Kerberos Tickets
+Tactic: Credential Access
+Description:
+  Description:
+  - 'Adversaries may attempt to subvert Kerberos authentication by stealing or forging
+    Kerberos tickets to enable Pass the Ticket. Kerberos is an authentication protocol
+    widely used in modern Windows domain environments. In Kerberos environments, referred
+    to as "realms", there are three basic participants: client, service, and Key Distribution
+    Center (KDC).[1] Clients request access to a service and through the exchange
+    of Kerberos tickets, originating from KDC, they are granted access after having
+    successfully authenticated. The KDC is responsible for both authentication and
+    ticket granting.  Adversaries may attempt to abuse Kerberos by stealing tickets
+    or forging tickets to enable unauthorized access.On Windows, the built-in klist
+    utility can be used to list and analyze cached Kerberos tickets.[2]Linux systems
+    on Active Directory domains store Kerberos credentials locally in the credential
+    cache file referred to as the "ccache". The credentials are stored in the ccache
+    file while they remain valid and generally while a user''s session lasts.[3] On
+    modern Redhat Enterprise Linux systems, and derivative distributions, the System
+    Security Services Daemon (SSSD) handles Kerberos tickets. By default SSSD maintains
+    a copy of the ticket database that can be found in /var/lib/sss/secrets/secrets.ldb
+    as well as the corresponding key located in /var/lib/sss/secrets/.secrets.mkey.
+    Both files require root access to read. If an adversary is able to access the
+    database and key, the credential cache Kerberos blob can be extracted and converted
+    into a usable Kerberos ccache file that adversaries may use for Pass the Ticket.
+    The ccache file may also be converted into a Windows format using tools such as
+    Kekeo.[4][5][6]Kerberos tickets on macOS are stored in a standard ccache format,
+    similar to Linux. By default, access to these ccache entries is federated through
+    the KCM daemon process via the Mach RPC protocol, which uses the caller''s environment
+    to determine access. The storage location for these ccache entries is influenced
+    by the /etc/krb5.conf configuration file and the KRB5CCNAME environment variable
+    which can specify to save them to disk or keep them protected via the KCM daemon.
+    Users can interact with ticket storage using kinit, klist, ktutil, and kcc built-in
+    binaries or via Apple''s native Kerberos framework. Adversaries can use open source
+    tools to interact with the ccache files directly or to use the Kerberos framework
+    to call lower-level APIs for extracting the user''s TGT or Service Tickets.[7][8]'
+Information:
+  Sub-techniques:
+  - T1558.001
+  - T1558.002
+  - T1558.003
+  - T1558.004
+  Tactic: Credential Access

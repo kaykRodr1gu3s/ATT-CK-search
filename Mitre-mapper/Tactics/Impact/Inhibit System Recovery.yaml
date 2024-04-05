@@ -1,0 +1,32 @@
+Name: Inhibit System Recovery
+Tactic: Impact
+Description:
+  Description:
+  - "Adversaries may delete or remove built-in data and turn off services designed\
+    \ to aid in the recovery of a corrupted system to prevent recovery.[1][2] This\
+    \ may deny access to available backups and recovery options.Operating systems\
+    \ may contain features that can help fix corrupted systems, such as a backup catalog,\
+    \ volume shadow copies, and automatic repair features. Adversaries may disable\
+    \ or delete system recovery features to augment the effects of Data Destruction\
+    \ and Data Encrypted for Impact.[1][2] Furthermore, adversaries may disable recovery\
+    \ notifications, then corrupt backups.[3]A number of native Windows utilities\
+    \ have been used by adversaries to disable or delete system recovery features:vssadmin.exe\
+    \ can be used to delete all volume shadow copies on a system - vssadmin.exe delete\
+    \ shadows /all /quietWindows Management Instrumentation can be used to delete\
+    \ volume shadow copies - wmic shadowcopy deletewbadmin.exe can be used to delete\
+    \ the Windows Backup Catalog - wbadmin.exe delete catalog -quietbcdedit.exe can\
+    \ be used to disable automatic Windows recovery features by modifying boot configuration\
+    \ data - bcdedit.exe /set {default} bootstatuspolicy ignoreallfailures & bcdedit\
+    \ /set {default} recoveryenabled noREAgentC.exe can be used to disable Windows\
+    \ Recovery Environment (WinRE) repair/recovery options of an infected systemOn\
+    \ network devices, adversaries may leverage Disk Wipe to delete backup firmware\
+    \ images and reformat the file system, then System Shutdown/Reboot to reload the\
+    \ device. Together this activity may leave network devices completely inoperable\
+    \ and inhibit recovery operations.Adversaries may also delete \"online\" backups\
+    \ that are connected to their network \u2013 whether via network storage media\
+    \ or through folders that sync to cloud services.[4] In cloud environments, adversaries\
+    \ may disable versioning and backup policies and delete snapshots, machine images,\
+    \ and prior versions of objects designed to be used in disaster recovery scenarios.[5][6]"
+Information:
+  Sub-techniques: []
+  Tactic: Impact

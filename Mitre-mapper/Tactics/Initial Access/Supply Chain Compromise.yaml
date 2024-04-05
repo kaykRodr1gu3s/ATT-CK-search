@@ -1,0 +1,26 @@
+Name: Supply Chain Compromise
+Tactic: Initial Access
+Description:
+  Description:
+  - Adversaries may manipulate products or product delivery mechanisms prior to receipt
+    by a final consumer for the purpose of data or system compromise.Supply chain
+    compromise can take place at any stage of the supply chain including:Manipulation
+    of development toolsManipulation of a development environmentManipulation of source
+    code repositories (public or private)Manipulation of source code in open-source
+    dependenciesManipulation of software update/distribution mechanismsCompromised/infected
+    system images (multiple cases of removable media infected at the factory)[1][2]
+    Replacement of legitimate software with modified versionsSales of modified/counterfeit
+    products to legitimate distributorsShipment interdictionWhile supply chain compromise
+    can impact any component of hardware or software, adversaries looking to gain
+    execution have often focused on malicious additions to legitimate software in
+    software distribution or update channels.[3][4][5] Targeting may be specific to
+    a desired victim set or malicious software may be distributed to a broad set of
+    consumers but only move on to additional tactics on specific victims.[6][3][5]
+    Popular open source projects that are used as dependencies in many applications
+    may also be targeted as a means to add malicious code to users of the dependency.[7]
+Information:
+  Sub-techniques:
+  - T1195.001
+  - T1195.002
+  - T1195.003
+  Tactic: Initial Access

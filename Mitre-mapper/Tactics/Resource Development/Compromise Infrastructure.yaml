@@ -1,0 +1,29 @@
+Name: Compromise Infrastructure
+Tactic: Resource Development
+Description:
+  Description:
+  - Adversaries may compromise third-party infrastructure that can be used during
+    targeting. Infrastructure solutions include physical or cloud servers, domains,
+    and third-party web and DNS services. Instead of buying, leasing, or renting infrastructure
+    an adversary may compromise infrastructure and use it during other phases of the
+    adversary lifecycle.[1][2][3][4] Additionally, adversaries may compromise numerous
+    machines to form a botnet they can leverage.Use of compromised infrastructure
+    allows adversaries to stage, launch, and execute operations. Compromised infrastructure
+    can help adversary operations blend in with traffic that is seen as normal, such
+    as contact with high reputation or trusted sites. For example, adversaries may
+    leverage compromised infrastructure (potentially also in conjunction with Digital
+    Certificates) to further blend in and support staged information gathering and/or
+    Phishing campaigns.[5] Additionally, adversaries may also compromise infrastructure
+    to support Proxy and/or proxyware services.[6][7]By using compromised infrastructure,
+    adversaries may make it difficult to tie their actions back to them. Prior to
+    targeting, adversaries may compromise the infrastructure of other adversaries.[8]
+Information:
+  Sub-techniques:
+  - T1584.001
+  - T1584.002
+  - T1584.003
+  - T1584.004
+  - T1584.005
+  - T1584.006
+  - T1584.007
+  Tactic: Resource Development

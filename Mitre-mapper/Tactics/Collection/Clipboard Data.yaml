@@ -1,0 +1,13 @@
+Name: Clipboard Data
+Tactic: Collection
+Description:
+  Description:
+  - "Adversaries may collect data stored in the clipboard from users copying information\
+    \ within or between applications. For example, on Windows adversaries can access\
+    \ clipboard data by using clip.exe or Get-Clipboard.[1][2][3] Additionally, adversaries\
+    \ may monitor then replace users\u2019 clipboard with their data (e.g., Transmitted\
+    \ Data Manipulation).[4]macOS and Linux also have commands, such as pbpaste, to\
+    \ grab clipboard contents.[5]"
+Information:
+  Sub-techniques: []
+  Tactic: Collection

@@ -1,0 +1,24 @@
+Name: System Information Discovery
+Tactic: Discovery
+Description:
+  Description:
+  - An adversary may attempt to get detailed information about the operating system
+    and hardware, including version, patches, hotfixes, service packs, and architecture.
+    Adversaries may use the information from System Information Discovery during automated
+    discovery to shape follow-on behaviors, including whether or not the adversary
+    fully infects the target and/or attempts specific actions.Tools such as Systeminfo
+    can be used to gather detailed system information. If running with privileged
+    access, a breakdown of system data can be gathered through the systemsetup configuration
+    tool on macOS. As an example, adversaries with user-level access can execute the
+    df -aH command to obtain currently mounted disks and associated freely available
+    space. Adversaries may also leverage a Network Device CLI on network devices to
+    gather detailed system information (e.g. show version).[1] System Information
+    Discovery combined with information gathered from other forms of discovery and
+    reconnaissance can drive payload development and concealment.[2][3]Infrastructure
+    as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to
+    instance and virtual machine information via APIs. Successful authenticated API
+    calls can return data such as the operating system platform and status of a particular
+    instance or the model view of a virtual machine.[4][5][6]
+Information:
+  Sub-techniques: []
+  Tactic: Discovery

@@ -1,0 +1,27 @@
+Name: Domain Policy Modification
+Tactic: Defense Evasion
+Description:
+  Description:
+  - 'Adversaries may modify the configuration settings of a domain to evade defenses
+    and/or escalate privileges in domain environments. Domains provide a centralized
+    means of managing how computer resources (ex: computers, user accounts) can act,
+    and interact with each other, on a network. The policy of the domain also includes
+    configuration settings that may apply between domains in a multi-domain/forest
+    environment. Modifications to domain settings may include altering domain Group
+    Policy Objects (GPOs) or changing trust settings for domains, including federation
+    trusts.With sufficient permissions, adversaries can modify domain policy settings.
+    Since domain configuration settings control many of the interactions within the
+    Active Directory (AD) environment, there are a great number of potential attacks
+    that can stem from this abuse. Examples of such abuse include modifying GPOs to
+    push a malicious Scheduled Task to computers throughout the domain environment[1][2][3]
+    or modifying domain trusts to include an adversary controlled domain where they
+    can control access tokens that will subsequently be accepted by victim domain
+    resources.[4] Adversaries can also change configuration settings within the AD
+    environment to implement a Rogue Domain Controller.Adversaries may temporarily
+    modify domain policy, carry out a malicious action(s), and then revert the change
+    to remove suspicious indicators.'
+Information:
+  Sub-techniques:
+  - T1484.001
+  - T1484.002
+  Tactic: Defense Evasion

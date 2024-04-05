@@ -1,0 +1,25 @@
+Name: Data from Information Repositories
+Tactic: Collection
+Description:
+  Description:
+  - Adversaries may leverage information repositories to mine valuable information.
+    Information repositories are tools that allow for storage of information, typically
+    to facilitate collaboration or information sharing between users, and can store
+    a wide variety of data that may aid adversaries in further objectives, or direct
+    access to the target information. Adversaries may also abuse external sharing
+    features to share sensitive documents with recipients outside of the organization.
+    The following is a brief list of example information that may hold potential value
+    to an adversary and may also be found on an information repository:Policies, procedures,
+    and standardsPhysical / logical network diagramsSystem architecture diagramsTechnical
+    system documentationTesting / development credentialsWork / project schedulesSource
+    code snippetsLinks to network shares and other internal resourcesInformation stored
+    in a repository may vary based on the specific instance or environment. Specific
+    common information repositories include web-based platforms such as Sharepoint
+    and Confluence, specific services such as Code Repositories, IaaS databases, enterprise
+    databases, and other storage infrastructure such as SQL Server.
+Information:
+  Sub-techniques:
+  - T1213.001
+  - T1213.002
+  - T1213.003
+  Tactic: Collection

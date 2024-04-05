@@ -1,0 +1,38 @@
+Name: Steal Application Access Token
+Tactic: Credential Access
+Description:
+  Description:
+  - "Adversaries can steal application access tokens as a means of acquiring credentials\
+    \ to access remote systems and resources.Application access tokens are used to\
+    \ make authorized API requests on behalf of a user or service and are commonly\
+    \ used as a way to access resources in cloud and container-based applications\
+    \ and software-as-a-service (SaaS).[1] OAuth is one commonly implemented framework\
+    \ that issues tokens to users for access to systems. Adversaries who steal account\
+    \ API tokens in cloud and containerized environments may be able to access data\
+    \ and perform actions with the permissions of these accounts, which can lead to\
+    \ privilege escalation and further compromise of the environment.In Kubernetes\
+    \ environments, processes running inside a container communicate with the Kubernetes\
+    \ API server using service account tokens. If a container is compromised, an attacker\
+    \ may be able to steal the container\u2019s token and thereby gain access to Kubernetes\
+    \ API commands.[2]Token theft can also occur through social engineering, in which\
+    \ case user action may be required to grant access. An application desiring access\
+    \ to cloud-based services or protected APIs can gain entry using OAuth 2.0 through\
+    \ a variety of authorization protocols. An example commonly-used sequence is Microsoft's\
+    \ Authorization Code Grant flow.[3][4] An OAuth access token enables a third-party\
+    \ application to interact with resources containing user data in the ways requested\
+    \ by the application without obtaining user credentials. Adversaries can leverage\
+    \ OAuth authorization by constructing a malicious application designed to be granted\
+    \ access to resources with the target user's OAuth token.[5][6] The adversary\
+    \ will need to complete registration of their application with the authorization\
+    \ server, for example Microsoft Identity Platform using Azure Portal, the Visual\
+    \ Studio IDE, the command-line interface, PowerShell, or REST API calls.[7] Then,\
+    \ they can send a Spearphishing Link to the target user to entice them to grant\
+    \ access to the application. Once the OAuth access token is granted, the application\
+    \ can gain potentially long-term access to features of the user account through\
+    \ Application Access Token.[8]Application access tokens may function within a\
+    \ limited lifetime, limiting how long an adversary can utilize the stolen token.\
+    \ However, in some cases, adversaries can also steal application refresh tokens[9],\
+    \ allowing them to obtain new access tokens without prompting the user.  "
+Information:
+  Sub-techniques: []
+  Tactic: Credential Access

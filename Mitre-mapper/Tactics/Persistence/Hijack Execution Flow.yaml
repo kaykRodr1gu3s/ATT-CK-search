@@ -1,0 +1,29 @@
+Name: Hijack Execution Flow
+Tactic: Persistence
+Description:
+  Description:
+  - Adversaries may execute their own malicious payloads by hijacking the way operating
+    systems run programs. Hijacking execution flow can be for the purposes of persistence,
+    since this hijacked execution may reoccur over time. Adversaries may also use
+    these mechanisms to elevate privileges or evade defenses, such as application
+    control or other restrictions on execution.There are many ways an adversary may
+    hijack the flow of execution, including by manipulating how the operating system
+    locates programs to be executed. How the operating system locates libraries to
+    be used by a program can also be intercepted. Locations where the operating system
+    looks for programs/resources, such as file directories and in the case of Windows
+    the Registry, could also be poisoned to include malicious payloads.
+Information:
+  Sub-techniques:
+  - T1574.001
+  - T1574.002
+  - T1574.004
+  - T1574.005
+  - T1574.006
+  - T1574.007
+  - T1574.008
+  - T1574.009
+  - T1574.010
+  - T1574.011
+  - T1574.012
+  - T1574.013
+  Tactic: Persistence

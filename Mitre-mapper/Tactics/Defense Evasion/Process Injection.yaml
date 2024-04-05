@@ -1,0 +1,31 @@
+Name: Process Injection
+Tactic: Defense Evasion
+Description:
+  Description:
+  - 'Adversaries may inject code into processes in order to evade process-based defenses
+    as well as possibly elevate privileges. Process injection is a method of executing
+    arbitrary code in the address space of a separate live process. Running code in
+    the context of another process may allow access to the process''s memory, system/network
+    resources, and possibly elevated privileges. Execution via process injection may
+    also evade detection from security products since the execution is masked under
+    a legitimate process. There are many different ways to inject code into a process,
+    many of which abuse legitimate functionalities. These implementations exist for
+    every major OS but are typically platform specific. More sophisticated samples
+    may perform multiple process injections to segment modules and further evade detection,
+    utilizing named pipes or other inter-process communication (IPC) mechanisms as
+    a communication channel. '
+Information:
+  Sub-techniques:
+  - T1055.001
+  - T1055.002
+  - T1055.003
+  - T1055.004
+  - T1055.005
+  - T1055.008
+  - T1055.009
+  - T1055.011
+  - T1055.012
+  - T1055.013
+  - T1055.014
+  - T1055.015
+  Tactic: Defense Evasion

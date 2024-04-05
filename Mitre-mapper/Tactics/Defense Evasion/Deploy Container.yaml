@@ -1,0 +1,17 @@
+Name: Deploy Container
+Tactic: Defense Evasion
+Description:
+  Description:
+  - Adversaries may deploy a container into an environment to facilitate execution
+    or evade defenses. In some cases, adversaries may deploy a new container to execute
+    processes associated with a particular image or deployment, such as processes
+    that execute or download malware. In others, an adversary may deploy a new container
+    configured without network rules, user limitations, etc. to bypass existing defenses
+    within the environment.Containers can be deployed by various means, such as via
+    Docker's create and start APIs or via a web application such as the Kubernetes
+    dashboard or Kubeflow.[1][2][3] Adversaries may deploy containers based on retrieved
+    or built malicious images or from benign images that download and execute malicious
+    payloads at runtime.[4]
+Information:
+  Sub-techniques: []
+  Tactic: Defense Evasion
