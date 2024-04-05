@@ -5,12 +5,17 @@ import yaml
 print(os.getcwd())
 os.chdir("Mitre-mapper\\Tactics")
 class file_writer:
-    def file_creator(self, datas):
+    def file_creator(self,tactic_datas, technique_datas):
         folders = os.listdir()
-        df = pd.DataFrame(datas)
+        df = pd.DataFrame(technique_datas)
         for folder in folders:
             os.chdir(folder)
+            os.mkdir("Technique")
+            with open(f"{folder}.yaml", 'w') as file:
+                yaml.dump(tactic_datas[folder], file, sort_keys=False)
+
             try:
+                os.chdir("technique")
                 df_filt = (df["Tactic"] == folder)
                 a = df.loc[df_filt].to_dict(orient="records")
                 for c in a:
@@ -18,5 +23,5 @@ class file_writer:
                         yaml.dump(c, f, sort_keys=False)
             except:
                 pass
-            os.chdir("../")
+            os.chdir("../../")
         
