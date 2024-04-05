@@ -2,7 +2,7 @@ import requests
 import bs4 
 import re
 
-from Tools import file_wiritter
+
 from Tools import techniques
 from Tools import file
 
@@ -76,12 +76,12 @@ class Tactic:
 tactic = Tactic()
 tactic.tactic_tracker()
 tactic.info_tracker(tactic.tactic_link)
-
-
+print(tactic.tactic_info)
 technique = techniques.Techniques_tracker()
 info_techiniques = technique.collecting(tactic.techniques_id)
 
 
+
 file_writer = file.file_writer()
-file_writer.file_creator(info_techiniques)
+file_writer.file_creator(tactic.tactic_info, info_techiniques)
 
