@@ -11,6 +11,8 @@ class Tactic:
     """
     This class will make a request to https://attack.mitre.org and collect all the tactics along with their information, such as description, ID, creation date, and last modified date.    
     """
+
+
     def __init__(self) -> None:
         self.link_base = 'https://attack.mitre.org'
         self.tactic_link = []
@@ -23,6 +25,8 @@ class Tactic:
         """
         This function will collect all the tactics names and ids.
         """
+
+
         req = requests.get(f'{self.link_base}/tactics/enterprise/')
         bs = bs4.BeautifulSoup(req.content, 'html.parser')
         bs = bs.find('table', class_='table table-bordered table-alternate mt-2')
@@ -39,6 +43,8 @@ class Tactic:
         """
         This function will collect information on tactics, including tactic name, description, ID, creation date, last modified date, and associated technique IDs.
         """
+
+        
         for tactic in link:
             Tactic_information = {}
             req = requests.get(f"{self.link_base}/tactics/{tactic}")            
