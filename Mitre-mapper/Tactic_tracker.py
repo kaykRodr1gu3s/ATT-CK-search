@@ -9,8 +9,7 @@ from Tools import file
 
 class Tactic:
     """
-    This class will request https://attack.mitre.org and will collect all the tactics and their infomation like: description, ID, when was create and the last modified.
-    
+    This class will make a request to https://attack.mitre.org and collect all the tactics along with their information, such as description, ID, creation date, and last modified date.    
     """
     def __init__(self) -> None:
         self.link_base = 'https://attack.mitre.org'
@@ -18,6 +17,7 @@ class Tactic:
         self.tactic_name = []
         self.tactic_info = {}
         self.techniques_id = []
+
 
     def tactic_tracker(self):
         """
@@ -34,9 +34,10 @@ class Tactic:
             else:
                 self.tactic_name.append(value.text)
 
+
     def info_tracker(self, link):
         """
-        This function will collect the tactics information, the information are: tactic name description, ID, when was create, last modified and the techniques id 
+        This function will collect information on tactics, including tactic name, description, ID, creation date, last modified date, and associated technique IDs.
         """
         for tactic in link:
             Tactic_information = {}
@@ -69,20 +70,19 @@ class Tactic:
 
             self.tactic_info[name] = Tactic_information
 
-        
 
-
+print("Collecting")        
 
 tactic = Tactic()
 tactic.tactic_tracker()
 tactic.info_tracker(tactic.tactic_link)
 
 
-technique = techniques.Techniques_tracker()
-info_techiniques = technique.collecting(tactic.techniques_id)
 
+technique = techniques.Techniques_tracker()
+technique.collecting(tactic.techniques_id)
 
 
 file_writer = file.file_writer()
-file_writer.file_creator(tactic.tactic_info, info_techiniques)
+file_writer.file_creator(tactic.tactic_info, technique.all_infos)
 
