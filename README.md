@@ -62,6 +62,5 @@ Upon executing the code, all data will be resaved accordingly.
 ## Contact
 
 - Linkedin: [Kayk Rodrigues](https://www.linkedin.com/in/kayk-rodrigues-504a03273)
-- Telegram: [Kayk Rodrigues](https://t.me/kaykRodrigues)
 
 
