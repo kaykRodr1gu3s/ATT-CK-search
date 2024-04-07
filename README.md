@@ -1,9 +1,15 @@
 # ATT&CK-search
 ## Overview
 
+This project aims to gather comprehensive data on Tactics, Techniques, and their respective Sub-Techniques from [Mitre](https://attack.mitre.org/matrices/enterprise/) through web scraping and subsequent data analysis. The collected data includes the name, description, and informational details associated with each Tactic and Technique.
 
-This tool enables you to search for tactics, techniques, and sub-techniques in the MITRE ATT&CK matrix. You can see the quantity of tactic in each matrix.
+For Tactic information, we collect the name, description, and any additional relevant details available in the form of information cards.
 
+For Techniques, we gather the name, ID, associated Sub-Technique IDs, platform compatibility, and version information.
+
+The collected data is organized and stored in YAML files for easy access and readability. Each Tactic has its own YAML file containing its details, while each Technique is represented by a separate YAML file.
+
+The project utilizes web scraping techniques to extract data from online sources, followed by data analysis to ensure data integrity and completeness.
 ---
 
 ### Index
@@ -25,36 +31,23 @@ Before using the code, make sure to install the required Python libraries using 
 pip install bs4
 pip install PyYAML
 pip install requests
+pip install pandas
 ```
 
 ---
 
 ### Usage
 
-The [ATTCK-search](https://github.com/kaykRodr1gu3s/ATTCK-search) has the options that allow you count the quantity of techniques in all [enterprise matrix](https://attack.mitre.org/matrices/enterprise/). The other option, is the [search](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Search), that allow you to search all the tactic and techniques, if have sub-techniques, you can search it through the terminal.        
-
-#### [Tactic](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/tactics)
-
-* Select the desired tactic for the search.
-* Choose the technique within the selected tactic.
-+ + if the technique has sub-techniques, you will be prompted to choose a sub-technique.
-
-+ + Select the sub-technique.
-  
-+ If the technique has no sub-techniques, the code will finish.
-
-Once all options (tactics, techniques, and sub-techniques) are finalized, the output will be displayed in your terminal. You will also have the option to save this output to a YAML file.
-[Example](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Enterprise/tactics/example.yaml) YAML File
-
-#### [Matrix](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices)
-
-The [Enterprise Matrix](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices) work with inputs in the terminal. 
+By default, all data will be saved in the "tactics" directory.
+![image](https://github.com/kaykRodr1gu3s/Mitre-mapper/assets/110197812/be61af8f-82db-4d5d-9cea-9dbc5d22c85c)
 
 
-All the files is saved in csv format, the [windows.csv](https://github.com/kaykRodr1gu3s/ATTCK-search/blob/main/Enterprise/Matrices/windows.csv) is the example. The cloud is in a diffent folder, the [office365.csv](https://github.com/kaykRodr1gu3s/ATTCK-search/tree/main/Enterprise/Matrices/Cloud_plataforms) is the example.
+If you wish to overwrite the data, delete the existing files in the "tactics" directory and the "techniques" folder.
+
+![image](https://github.com/kaykRodr1gu3s/Mitre-mapper/assets/110197812/fdc4c4fa-99cb-4bb4-b91e-91779641841c)
 
 
-
+Upon executing the code, all data will be resaved accordingly.
 
 ---
 
