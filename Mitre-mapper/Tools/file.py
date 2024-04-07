@@ -5,6 +5,7 @@ import yaml
 class file_writer:
     """
     This class will create the yaml files, the yaml files will be pass as argument on file_creator function.
+   
     """
 
     def file_creator(self,tactic_datas: list, technique_datas: list):
@@ -21,7 +22,7 @@ class file_writer:
 
             os.chdir(folder)
             os.mkdir("Technique")
-            
+
             with open(f"{folder}.yaml", 'w') as file:
                 yaml.dump(tactic_datas[folder], file, sort_keys=False)
 
