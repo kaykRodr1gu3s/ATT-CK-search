@@ -16,5 +16,10 @@ Description:
     callbacks or Fallback Channels in case the original first-stage communication
     path is discovered and blocked.
 Information:
+  ID: T1104
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 31 May 2017
+  Last Modified: 14 July 2020

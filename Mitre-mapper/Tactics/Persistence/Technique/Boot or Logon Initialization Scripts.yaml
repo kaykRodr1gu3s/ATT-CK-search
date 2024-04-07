@@ -12,6 +12,7 @@ Description:
     may also be able to escalate their privileges since some boot or logon initialization
     scripts run with higher privileges.
 Information:
+  ID: T1037
   Sub-techniques:
   - T1037.001
   - T1037.002
@@ -19,3 +20,10 @@ Information:
   - T1037.004
   - T1037.005
   Tactic: Persistence
+  All tactics:
+  - Persistence
+  - Privilege Escalation
+  Platforms: Linux, Windows, macOS
+  Version: '2.2'
+  Created: 31 May 2017
+  Last Modified: 11 August 2023

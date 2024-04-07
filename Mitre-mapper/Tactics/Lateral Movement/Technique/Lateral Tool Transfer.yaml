@@ -14,5 +14,11 @@ Description:
     be able to leverage Web Services such as Dropbox or OneDrive to copy files from
     one machine to another via shared, automatically synced folders.[2]
 Information:
+  ID: T1570
   Sub-techniques: []
   Tactic: Lateral Movement
+  Platforms: Linux, Windows, macOS
+  Contributors: Shailesh Tiwary (Indian Army)
+  Version: '1.3'
+  Created: 11 March 2020
+  Last Modified: 01 October 2023

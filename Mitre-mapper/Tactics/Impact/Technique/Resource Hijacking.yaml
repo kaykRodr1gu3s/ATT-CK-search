@@ -20,5 +20,14 @@ Description:
     \ they may engage in proxyjacking by selling use of the victims' network bandwidth\
     \ and IP address to proxyware services.[7]"
 Information:
+  ID: T1496
   Sub-techniques: []
   Tactic: Impact
+  Platforms: Containers, IaaS, Linux, Windows, macOS
+  Impact Type: Availability
+  Contributors: Alfredo Oliveira, Trend Micro; David Fiser, @anu4is, Trend Micro;
+    Goldstein Menachem; Jay Chen, Palo Alto Networks; Magno Logan, @magnologan, Trend
+    Micro; Vishwas Manral, McAfee; Yossi Weizman, Azure Defender Research Team
+  Version: '1.4'
+  Created: 17 April 2019
+  Last Modified: 02 October 2023

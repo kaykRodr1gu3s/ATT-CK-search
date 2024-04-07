@@ -15,8 +15,14 @@ Description:
     of files, emails, source code, and other sensitive information via the web console
     or Cloud API.
 Information:
+  ID: T1048
   Sub-techniques:
   - T1048.001
   - T1048.002
   - T1048.003
   Tactic: Exfiltration
+  Platforms: Google Workspace, IaaS, Linux, Network, Office 365, SaaS, Windows, macOS
+  Contributors: Alfredo Abarca; William Cain
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 15 April 2023

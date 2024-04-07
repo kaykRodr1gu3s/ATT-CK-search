@@ -19,9 +19,16 @@ Description:
     are directed to visit a malicious URL, download malware,[5][6] or install adversary-accessible
     remote management tools onto their computer (i.e., User Execution).[7]
 Information:
+  ID: T1566
   Sub-techniques:
   - T1566.001
   - T1566.002
   - T1566.003
   - T1566.004
   Tactic: Initial Access
+  Platforms: Google Workspace, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: Liora Itkin; Liran Ravich, CardinalOps; Ohad Zaidenberg, @ohad_mz;
+    Philip Winther; Scott Cook, Capital One
+  Version: '2.4'
+  Created: 02 March 2020
+  Last Modified: 08 September 2023

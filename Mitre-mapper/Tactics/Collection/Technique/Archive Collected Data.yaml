@@ -10,8 +10,13 @@ Description:
     exfiltration, and can be performed using a utility, 3rd party library, or custom
     method.
 Information:
+  ID: T1560
   Sub-techniques:
   - T1560.001
   - T1560.002
   - T1560.003
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 20 February 2020
+  Last Modified: 04 January 2022

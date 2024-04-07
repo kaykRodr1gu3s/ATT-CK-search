@@ -16,5 +16,19 @@ Description:
     \ In containerized environments, this may include an exposed Docker API, Kubernetes\
     \ API server, kubelet, or web application such as the Kubernetes dashboard.[3][4]"
 Information:
+  ID: T1133
   Sub-techniques: []
   Tactic: Persistence
+  All tactics:
+  - Persistence
+  - Initial Access
+  Platforms: Containers, Linux, Windows, macOS
+  Contributors: Alfredo Oliveira, Trend Micro; Ariel Shuper, Cisco; Brad Geesaman,
+    @bradgeesaman; Daniel Oakley; David Fiser, @anu4is, Trend Micro; David Tayouri;
+    ExtraHop; Idan Frimark, Cisco; Jay Chen, Palo Alto Networks; Magno Logan, @magnologan,
+    Trend Micro; Rory McCune, Aqua Security; Travis Smith, Tripwire; Vishwas Manral,
+    McAfee; Yossi Weizman, Azure Defender Research Team; Yuval Avrahami, Palo Alto
+    Networks
+  Version: '2.4'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

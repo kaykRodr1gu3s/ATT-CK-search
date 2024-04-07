@@ -26,5 +26,11 @@ Description:
     may also obtain then abuse leaked credentials from source repositories, logs,
     or other means as a way to gain access to cloud storage objects.'
 Information:
+  ID: T1530
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Google Workspace, IaaS, Office 365, SaaS
+  Contributors: AppOmni; Netskope; Praetorian
+  Version: '2.1'
+  Created: 30 August 2019
+  Last Modified: 29 September 2023

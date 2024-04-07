@@ -12,6 +12,7 @@ Description:
     or extending features of the kernel.Since some boot or logon autostart programs
     run with higher privileges, an adversary may leverage these to elevate privileges.
 Information:
+  ID: T1547
   Sub-techniques:
   - T1547.001
   - T1547.002
@@ -28,3 +29,11 @@ Information:
   - T1547.014
   - T1547.015
   Tactic: Persistence
+  All tactics:
+  - Persistence
+  - Privilege Escalation
+  Platforms: Linux, Windows, macOS
+  Permissions Required: Administrator, User, root
+  Version: '1.1'
+  Created: 23 January 2020
+  Last Modified: 30 March 2023

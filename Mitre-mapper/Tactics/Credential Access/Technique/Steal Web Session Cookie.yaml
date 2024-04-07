@@ -19,5 +19,11 @@ Description:
     acquires a valid cookie, they can then perform a Web Session Cookie technique
     to login to the corresponding web application.'
 Information:
+  ID: T1539
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Google Workspace, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: Johann Rehberger; Microsoft Threat Intelligence Center (MSTIC)
+  Version: '1.2'
+  Created: 08 October 2019
+  Last Modified: 03 August 2023

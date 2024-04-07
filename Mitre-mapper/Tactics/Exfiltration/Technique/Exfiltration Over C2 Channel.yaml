@@ -6,5 +6,11 @@ Description:
     channel. Stolen data is encoded into the normal communications channel using the
     same protocol as command and control communications.
 Information:
+  ID: T1041
   Sub-techniques: []
   Tactic: Exfiltration
+  Platforms: Linux, Windows, macOS
+  Contributors: William Cain
+  Version: '2.2'
+  Created: 31 May 2017
+  Last Modified: 07 April 2023

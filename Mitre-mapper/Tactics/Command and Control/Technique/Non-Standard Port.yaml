@@ -10,5 +10,10 @@ Description:
     Registry keys and other configuration settings can be used to modify protocol
     and port pairings.[3]
 Information:
+  ID: T1571
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.1'
+  Created: 14 March 2020
+  Last Modified: 28 February 2023

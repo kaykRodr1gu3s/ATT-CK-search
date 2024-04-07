@@ -9,5 +9,11 @@ Description:
     an available API provided by the operating system or an application to capture
     audio. Audio files may be written to disk and exfiltrated later.
 Information:
+  ID: T1123
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  Permissions Required: User
+  Version: '1.0'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

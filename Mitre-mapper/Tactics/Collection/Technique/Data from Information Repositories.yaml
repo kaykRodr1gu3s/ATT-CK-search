@@ -18,8 +18,15 @@ Description:
     and Confluence, specific services such as Code Repositories, IaaS databases, enterprise
     databases, and other storage infrastructure such as SQL Server.
 Information:
+  ID: T1213
   Sub-techniques:
   - T1213.001
   - T1213.002
   - T1213.003
   Tactic: Collection
+  Platforms: Google Workspace, IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: Isif Ibrahima, Mandiant; Milos Stojadinovic; Naveen Vijayaraghavan,
+    Nilesh Dherange (Gurucul); Praetorian; Regina Elwell
+  Version: '3.2'
+  Created: 18 April 2018
+  Last Modified: 11 April 2022

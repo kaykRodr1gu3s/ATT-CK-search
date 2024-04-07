@@ -23,5 +23,13 @@ Description:
     ransom notes or other messages to connected printers (known as "print bombing").[6]In
     cloud environments, storage objects within compromised accounts may also be encrypted.[7]
 Information:
+  ID: T1486
   Sub-techniques: []
   Tactic: Impact
+  Platforms: IaaS, Linux, Windows, macOS
+  Impact Type: Availability
+  Contributors: ExtraHop; Harshal Tupsamudre, Qualys; Mayuresh Dani, Qualys; Oleg
+    Kolesnikov, Securonix; Travis Smith, Qualys
+  Version: '1.4'
+  Created: 15 March 2019
+  Last Modified: 16 June 2022

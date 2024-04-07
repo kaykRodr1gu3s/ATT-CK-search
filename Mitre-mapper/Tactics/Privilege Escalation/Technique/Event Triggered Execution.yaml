@@ -15,6 +15,7 @@ Description:
     with higher permissions, such as SYSTEM or service accounts, an adversary may
     be able to abuse these triggered execution mechanisms to escalate their privileges. '
 Information:
+  ID: T1546
   Sub-techniques:
   - T1546.001
   - T1546.002
@@ -33,3 +34,10 @@ Information:
   - T1546.015
   - T1546.016
   Tactic: Privilege Escalation
+  All tactics:
+  - Privilege Escalation
+  - Persistence
+  Platforms: IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Version: '1.2'
+  Created: 22 January 2020
+  Last Modified: 19 October 2022

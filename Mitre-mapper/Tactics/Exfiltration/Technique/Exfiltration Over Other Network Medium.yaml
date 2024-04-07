@@ -10,6 +10,12 @@ Description:
     might not be secured or defended as well as the primary Internet-connected channel
     because it is not routed through the same enterprise network.
 Information:
+  ID: T1011
   Sub-techniques:
   - T1011.001
   Tactic: Exfiltration
+  Platforms: Linux, Windows, macOS
+  Contributors: Itzik Kotler, SafeBreach
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 11 September 2023

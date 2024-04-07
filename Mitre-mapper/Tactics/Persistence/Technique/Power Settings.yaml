@@ -16,5 +16,11 @@ Description:
     system reboots, adversaries may entirely delete files used to invoke system shut
     down or reboot.[7]
 Information:
+  ID: T1653
   Sub-techniques: []
   Tactic: Persistence
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Goldstein Menachem; Juan Tapiador
+  Version: '1.0'
+  Created: 05 June 2023
+  Last Modified: 30 September 2023

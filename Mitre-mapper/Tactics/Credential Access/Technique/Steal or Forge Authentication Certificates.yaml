@@ -32,5 +32,12 @@ Description:
     \ and related services in order to access other forms of credentials, such as\
     \ Golden Ticket ticket-granting tickets (TGT) or NTLM plaintext.[7]"
 Information:
+  ID: T1649
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Azure AD, Linux, Windows, macOS
+  Contributors: Lee Christensen, SpecterOps; Thirumalai Natarajan, Mandiant; Tristan
+    Bennett, Seamless Intelligence
+  Version: '1.1'
+  Created: 03 August 2022
+  Last Modified: 02 March 2023

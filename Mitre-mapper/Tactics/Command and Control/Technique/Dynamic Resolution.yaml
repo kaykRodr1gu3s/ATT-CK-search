@@ -12,8 +12,15 @@ Description:
     server malware may employ dynamic resolution as a means to reestablishing command
     and control.[1][2][3]
 Information:
+  ID: T1568
   Sub-techniques:
   - T1568.001
   - T1568.002
   - T1568.003
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Permissions Required: User
+  Contributors: Chris Roffe
+  Version: '1.0'
+  Created: 10 March 2020
+  Last Modified: 11 March 2022

@@ -11,5 +11,11 @@ Description:
     via the graphical dashboard than an API. This allows the adversary to gain information
     without making any API requests.
 Information:
+  ID: T1538
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Azure AD, Google Workspace, IaaS, Office 365
+  Contributors: Praetorian
+  Version: '1.2'
+  Created: 30 August 2019
+  Last Modified: 16 October 2023

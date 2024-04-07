@@ -20,5 +20,13 @@ Description:
     and began warning employees of the threat, the SEA sent phishing emails mimicking
     the Financial Times IT department and were able to compromise even more users.[2]
 Information:
+  ID: T1534
   Sub-techniques: []
   Tactic: Lateral Movement
+  Platforms: Google Workspace, Linux, Office 365, SaaS, Windows, macOS
+  Permissions Required: User
+  Contributors: Swetha Prabakaran, Microsoft Threat Intelligence Center (MSTIC); Tim
+    MalcomVetter
+  Version: '1.2'
+  Created: 04 September 2019
+  Last Modified: 08 March 2022

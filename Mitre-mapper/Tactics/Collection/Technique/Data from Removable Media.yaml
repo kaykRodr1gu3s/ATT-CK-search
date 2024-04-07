@@ -9,5 +9,12 @@ Description:
     within cmd may be used to gather information. Some adversaries may also use Automated
     Collection on removable media.
 Information:
+  ID: T1025
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  System Requirements: Privileges to access removable media drive and files
+  Contributors: William Cain
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 15 October 2021

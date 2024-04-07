@@ -18,5 +18,16 @@ Description:
     mobile device, the malware could infect the machine (especially if Autorun features
     are enabled).
 Information:
+  ID: T1091
   Sub-techniques: []
   Tactic: Lateral Movement
+  All tactics:
+  - Lateral Movement
+  - Initial Access
+  Platforms: Windows
+  System Requirements: Removable media allowed, Autorun enabled or vulnerability present
+    that allows for code execution
+  Contributors: Joas Antonio dos Santos, @C0d3Cr4zy
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 17 October 2023

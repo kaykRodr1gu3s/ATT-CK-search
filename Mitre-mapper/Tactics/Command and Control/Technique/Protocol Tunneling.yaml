@@ -19,5 +19,10 @@ Description:
     with Proxy and/or Protocol Impersonation to further conceal C2 communications
     and infrastructure. '
 Information:
+  ID: T1572
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 15 March 2020
+  Last Modified: 27 March 2020

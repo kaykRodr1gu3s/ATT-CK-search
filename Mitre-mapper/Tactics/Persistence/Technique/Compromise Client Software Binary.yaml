@@ -17,5 +17,11 @@ Description:
     \ may be routinely executed by the user, the adversary can leverage this for persistent\
     \ access to the host."
 Information:
+  ID: T1554
   Sub-techniques: []
   Tactic: Persistence
+  Platforms: Linux, Windows, macOS
+  Contributors: CrowdStrike Falcon OverWatch
+  Version: '1.1'
+  Created: 11 February 2020
+  Last Modified: 03 October 2023

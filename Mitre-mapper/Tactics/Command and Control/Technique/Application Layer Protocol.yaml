@@ -11,9 +11,15 @@ Description:
     those between a proxy or pivot node and other nodes), commonly used protocols
     are SMB, SSH, or RDP. '
 Information:
+  ID: T1071
   Sub-techniques:
   - T1071.001
   - T1071.002
   - T1071.003
   - T1071.004
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Contributors: Duane Michael
+  Version: '2.1'
+  Created: 31 May 2017
+  Last Modified: 11 April 2023

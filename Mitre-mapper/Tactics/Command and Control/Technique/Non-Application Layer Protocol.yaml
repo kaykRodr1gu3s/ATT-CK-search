@@ -13,5 +13,11 @@ Description:
     hosts.[3] However, it is not as commonly monitored as other Internet Protocols
     such as TCP or UDP and may be used by adversaries to hide communications.
 Information:
+  ID: T1095
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Duane Michael; Ryan Becwar
+  Version: '2.3'
+  Created: 31 May 2017
+  Last Modified: 29 September 2023

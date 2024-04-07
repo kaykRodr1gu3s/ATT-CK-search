@@ -26,5 +26,16 @@ Description:
     may perform network captures using Network Device CLI commands such as monitor
     capture.[6][7]
 Information:
+  ID: T1040
   Sub-techniques: []
   Tactic: Credential Access
+  All tactics:
+  - Credential Access
+  - Discovery
+  Platforms: IaaS, Linux, Network, Windows, macOS
+  System Requirements: Network interface access and packet capture driver
+  Contributors: Austin Clark, @c2defense; Itamar Mizrahi, Cymptom; Oleg Kolesnikov,
+    Securonix; Tiago Faria, 3CORESec
+  Version: '1.5'
+  Created: 31 May 2017
+  Last Modified: 10 July 2023

@@ -13,5 +13,12 @@ Description:
     rather than capturing the victim's screen.In macOS, there are a few different
     malware samples that record the user's webcam such as FruitFly and Proton. [1]
 Information:
+  ID: T1125
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  Permissions Required: User
+  Contributors: Praetorian
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

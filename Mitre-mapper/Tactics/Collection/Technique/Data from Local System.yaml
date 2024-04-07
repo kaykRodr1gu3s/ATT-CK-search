@@ -9,5 +9,12 @@ Description:
     with the file system to gather information.[1] Adversaries may also use Automated
     Collection on the local system.
 Information:
+  ID: T1005
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Network, Windows, macOS
+  System Requirements: Privileges to access certain files and directories
+  Contributors: Austin Clark, @c2defense; William Cain
+  Version: '1.6'
+  Created: 31 May 2017
+  Last Modified: 12 April 2023

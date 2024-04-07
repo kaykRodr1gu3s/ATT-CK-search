@@ -14,5 +14,11 @@ Description:
     \ such as SIEMs. Logs may also be bulk exported and sent to adversary-controlled\
     \ infrastructure for offline analysis."
 Information:
+  ID: T1654
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: IaaS, Linux, Windows, macOS
+  Contributors: "Bilal Bahad\u0131r Yenici"
+  Version: '1.0'
+  Created: 10 July 2023
+  Last Modified: 30 September 2023

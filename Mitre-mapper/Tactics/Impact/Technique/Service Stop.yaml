@@ -14,5 +14,11 @@ Description:
     or Data Encrypted for Impact on the data stores of services like Exchange and
     SQL Server.[3]
 Information:
+  ID: T1489
   Sub-techniques: []
   Tactic: Impact
+  Platforms: Linux, Windows, macOS
+  Impact Type: Availability
+  Version: '1.2'
+  Created: 29 March 2019
+  Last Modified: 28 July 2022

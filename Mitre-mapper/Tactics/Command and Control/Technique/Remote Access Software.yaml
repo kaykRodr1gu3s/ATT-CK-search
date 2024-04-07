@@ -17,5 +17,11 @@ Description:
     include persistence (e.g., the software's installation routine creates a Windows
     Service).
 Information:
+  ID: T1219
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Contributors: Matt Kelly, @breakersall; Zachary Stanford, @svch0st
+  Version: '2.2'
+  Created: 18 April 2018
+  Last Modified: 28 September 2023

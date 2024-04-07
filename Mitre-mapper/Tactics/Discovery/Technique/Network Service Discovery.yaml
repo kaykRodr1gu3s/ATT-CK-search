@@ -16,5 +16,11 @@ Description:
     \ can use a mDNS query (such as dns-sd -B _ssh._tcp .) to find other systems broadcasting\
     \ the ssh service.[2][3]"
 Information:
+  ID: T1046
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Containers, IaaS, Linux, Network, Windows, macOS
+  Contributors: Praetorian
+  Version: '3.1'
+  Created: 31 May 2017
+  Last Modified: 11 August 2023

@@ -15,7 +15,14 @@ Description:
     files and other data from the device using Network Device CLI commands such as
     erase.[2]
 Information:
+  ID: T1561
   Sub-techniques:
   - T1561.001
   - T1561.002
   Tactic: Impact
+  Platforms: Linux, Network, Windows, macOS
+  Impact Type: Availability
+  Contributors: Austin Clark, @c2defense
+  Version: '1.1'
+  Created: 20 February 2020
+  Last Modified: 20 April 2023

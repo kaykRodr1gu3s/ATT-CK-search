@@ -15,6 +15,7 @@ Description:
     utilizing named pipes or other inter-process communication (IPC) mechanisms as
     a communication channel. '
 Information:
+  ID: T1055
   Sub-techniques:
   - T1055.001
   - T1055.002
@@ -29,3 +30,12 @@ Information:
   - T1055.014
   - T1055.015
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Privilege Escalation
+  Platforms: Linux, Windows, macOS
+  Defense Bypassed: Anti-virus, Application control
+  Contributors: Anastasios Pingios; Christiaan Beek, @ChristiaanBeek; Ryan Becwar
+  Version: '1.3'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

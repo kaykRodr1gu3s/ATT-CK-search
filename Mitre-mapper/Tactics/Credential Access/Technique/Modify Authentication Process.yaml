@@ -16,6 +16,7 @@ Description:
     for persistent access to remote systems and externally available services, such
     as VPNs, Outlook Web Access and remote desktop.
 Information:
+  ID: T1556
   Sub-techniques:
   - T1556.001
   - T1556.002
@@ -26,3 +27,13 @@ Information:
   - T1556.007
   - T1556.008
   Tactic: Credential Access
+  All tactics:
+  - Credential Access
+  - Defense Evasion
+  - Persistence
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Network, Office 365, SaaS, Windows,
+    macOS
+  Contributors: Chris Ross @xorrior
+  Version: '2.3'
+  Created: 11 February 2020
+  Last Modified: 11 April 2023

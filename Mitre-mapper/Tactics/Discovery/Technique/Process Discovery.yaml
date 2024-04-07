@@ -15,5 +15,13 @@ Description:
     devices, Network Device CLI commands such as show processes can be used to display
     current running processes.[1][2]
 Information:
+  ID: T1057
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Linux, Network, Windows, macOS
+  System Requirements: Administrator, SYSTEM may provide better process ownership
+    details
+  Contributors: Austin Clark, @c2defense
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 11 August 2023

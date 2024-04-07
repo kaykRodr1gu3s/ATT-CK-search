@@ -14,5 +14,11 @@ Description:
     drivers (in the form of kernel modules) may be visible within /dev or using utilities
     such as lsmod and modinfo.[4][5][6]
 Information:
+  ID: T1652
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Linux, Windows, macOS
+  Contributors: ESET
+  Version: '1.0'
+  Created: 28 March 2023
+  Last Modified: 04 May 2023

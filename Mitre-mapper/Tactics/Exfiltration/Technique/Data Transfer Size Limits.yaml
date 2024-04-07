@@ -6,5 +6,10 @@ Description:
     limit packet sizes below certain thresholds. This approach may be used to avoid
     triggering network data transfer threshold alerts.
 Information:
+  ID: T1030
   Sub-techniques: []
   Tactic: Exfiltration
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 31 May 2017
+  Last Modified: 14 July 2020

@@ -8,6 +8,12 @@ Description:
     the information out of the network, such as Exfiltration Over C2 Channel and Exfiltration
     Over Alternative Protocol.
 Information:
+  ID: T1020
   Sub-techniques:
   - T1020.001
   Tactic: Exfiltration
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: ExtraHop
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 19 April 2022

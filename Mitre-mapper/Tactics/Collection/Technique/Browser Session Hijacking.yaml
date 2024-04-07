@@ -21,5 +21,12 @@ Description:
     and which the browser has sufficient permissions. Browser pivoting may also bypass
     security provided by 2-factor authentication.[4]
 Information:
+  ID: T1185
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Windows
+  Permissions Required: Administrator, SYSTEM
+  Contributors: Justin Warner, ICEBRG
+  Version: '2.0'
+  Created: 16 January 2018
+  Last Modified: 25 February 2022

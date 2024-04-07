@@ -34,7 +34,18 @@ Description:
     a magic packet to it. Once the system is powered on, it may become a target for
     lateral movement.[5][6]
 Information:
+  ID: T1205
   Sub-techniques:
   - T1205.001
   - T1205.002
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Persistence
+  - Command and Control
+  Platforms: Linux, Network, Windows, macOS
+  Defense Bypassed: Defensive network service scanning
+  Contributors: Josh Day, Gigamon; Tony Lee
+  Version: '2.4'
+  Created: 18 April 2018
+  Last Modified: 19 October 2022

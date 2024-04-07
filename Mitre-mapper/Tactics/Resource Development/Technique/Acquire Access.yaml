@@ -23,5 +23,11 @@ Description:
     behaviors such as Purchase Technical Data and Credentials, they may often be used
     in conjunction (especially where the acquired foothold requires Valid Accounts).'
 Information:
+  ID: T1650
   Sub-techniques: []
   Tactic: Resource Development
+  Platforms: PRE
+  Contributors: Jeffrey Barto; Jeremy Kennelly
+  Version: '1.0'
+  Created: 10 March 2023
+  Last Modified: 14 April 2023

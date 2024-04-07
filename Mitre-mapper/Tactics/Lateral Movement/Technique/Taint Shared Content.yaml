@@ -26,5 +26,12 @@ Description:
     non-binary formats that end with extensions including, but not limited to, .EXE,
     .DLL, .SCR, .BAT, and/or .VBS.
 Information:
+  ID: T1080
   Sub-techniques: []
   Tactic: Lateral Movement
+  Platforms: Linux, Office 365, SaaS, Windows, macOS
+  System Requirements: Access to shared folders and content with write permissions
+  Contributors: David Routin; Michal Dida, ESET
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 31 May 2023

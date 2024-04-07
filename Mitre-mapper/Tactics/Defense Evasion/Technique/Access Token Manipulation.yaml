@@ -21,6 +21,7 @@ Description:
     it does not require access to an administrator account. There are also other mechanisms,
     such as Active Directory fields, that can be used to modify access tokens.
 Information:
+  ID: T1134
   Sub-techniques:
   - T1134.001
   - T1134.002
@@ -28,3 +29,16 @@ Information:
   - T1134.004
   - T1134.005
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Privilege Escalation
+  Platforms: Windows
+  Permissions Required: Administrator, User
+  Effective Permissions: SYSTEM
+  Defense Bypassed: Heuristic Detection, Host Forensic Analysis, System Access Controls,
+    Windows User Account Control
+  Contributors: Jared Atkinson, @jaredcatkinson; Robby Winchester, @robwinchester3;
+    Tom Ueltschi @c_APT_ure; Travis Smith, Tripwire
+  Version: '2.0'
+  Created: 14 December 2017
+  Last Modified: 30 March 2023

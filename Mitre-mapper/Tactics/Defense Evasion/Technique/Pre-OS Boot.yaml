@@ -11,6 +11,7 @@ Description:
     below the operating system. This can be particularly difficult to detect as malware
     at this level will not be detected by host software-based defenses.
 Information:
+  ID: T1542
   Sub-techniques:
   - T1542.001
   - T1542.002
@@ -18,3 +19,11 @@ Information:
   - T1542.004
   - T1542.005
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Persistence
+  Platforms: Linux, Network, Windows, macOS
+  Defense Bypassed: Anti-virus, File monitoring, Host intrusion prevention systems
+  Version: '1.1'
+  Created: 13 November 2019
+  Last Modified: 19 April 2022

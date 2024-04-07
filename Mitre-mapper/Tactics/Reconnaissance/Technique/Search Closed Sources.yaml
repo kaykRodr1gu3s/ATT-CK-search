@@ -13,7 +13,12 @@ Description:
     establishing operational resources (ex: Develop Capabilities or Obtain Capabilities),
     and/or initial access (ex: External Remote Services or Valid Accounts).'
 Information:
+  ID: T1597
   Sub-techniques:
   - T1597.001
   - T1597.002
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.0'
+  Created: 02 October 2020
+  Last Modified: 15 April 2021

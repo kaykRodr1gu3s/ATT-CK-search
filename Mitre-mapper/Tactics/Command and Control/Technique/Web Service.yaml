@@ -13,8 +13,15 @@ Description:
     malware binary analysis while also enabling operational resiliency (since this
     infrastructure may be dynamically changed).
 Information:
+  ID: T1102
   Sub-techniques:
   - T1102.001
   - T1102.002
   - T1102.003
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Permissions Required: User
+  Contributors: Anastasios Pingios
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 26 March 2020

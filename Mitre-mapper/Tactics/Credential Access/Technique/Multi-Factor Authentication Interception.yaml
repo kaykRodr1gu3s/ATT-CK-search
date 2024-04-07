@@ -25,5 +25,11 @@ Description:
     \ may compromise an SMS messaging service in order to steal MFA codes sent to\
     \ users\u2019 phones.[3]"
 Information:
+  ID: T1111
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Linux, Windows, macOS
+  Contributors: John Lambert, Microsoft Threat Intelligence Center
+  Version: '2.1'
+  Created: 31 May 2017
+  Last Modified: 14 April 2023

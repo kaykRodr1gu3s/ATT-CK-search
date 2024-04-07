@@ -15,5 +15,13 @@ Description:
     \ and permissions to list the available container images, they may implant a backdoor\
     \ such as a Web Shell.[1]"
 Information:
+  ID: T1525
   Sub-techniques: []
   Tactic: Persistence
+  Platforms: Containers, IaaS
+  Permissions Required: User
+  Contributors: Praetorian; Vishwas Manral, McAfee; Yossi Weizman, Azure Defender
+    Research Team
+  Version: '2.1'
+  Created: 04 September 2019
+  Last Modified: 08 March 2022

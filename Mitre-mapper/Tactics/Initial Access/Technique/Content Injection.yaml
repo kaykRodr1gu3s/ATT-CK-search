@@ -19,5 +19,13 @@ Description:
     for example at the level of an internet service provider (ISP) as is the case
     with "lawful interception."[3][1][4]'
 Information:
+  ID: T1659
   Sub-techniques: []
   Tactic: Initial Access
+  All tactics:
+  - Initial Access
+  - Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 01 September 2023
+  Last Modified: 01 October 2023

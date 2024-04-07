@@ -16,8 +16,14 @@ Description:
     or Phishing for Information), establishing operational resources (ex: Compromise
     Accounts), and/or initial access (ex: Phishing or Valid Accounts).'
 Information:
+  ID: T1589
   Sub-techniques:
   - T1589.001
   - T1589.002
   - T1589.003
   Tactic: Reconnaissance
+  Platforms: PRE
+  Contributors: "Jannie Li, Microsoft Threat Intelligence\u202FCenter\u202F(MSTIC)"
+  Version: '1.2'
+  Created: 02 October 2020
+  Last Modified: 21 April 2022

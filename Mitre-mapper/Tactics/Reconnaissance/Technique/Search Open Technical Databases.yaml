@@ -13,6 +13,7 @@ Description:
     Infrastructure or Compromise Infrastructure), and/or initial access (ex: External
     Remote Services or Trusted Relationship).'
 Information:
+  ID: T1596
   Sub-techniques:
   - T1596.001
   - T1596.002
@@ -20,3 +21,7 @@ Information:
   - T1596.004
   - T1596.005
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.0'
+  Created: 02 October 2020
+  Last Modified: 18 October 2022

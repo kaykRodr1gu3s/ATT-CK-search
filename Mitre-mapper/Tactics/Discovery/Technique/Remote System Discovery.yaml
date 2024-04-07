@@ -14,5 +14,11 @@ Description:
     to gather detailed information about systems within a network (e.g. show cdp neighbors,
     show arp).[1][2] '
 Information:
+  ID: T1018
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Austin Clark, @c2defense; Daniel Stepanic, Elastic; RedHuntLabs, @redhuntlabs
+  Version: '3.5'
+  Created: 31 May 2017
+  Last Modified: 14 August 2023

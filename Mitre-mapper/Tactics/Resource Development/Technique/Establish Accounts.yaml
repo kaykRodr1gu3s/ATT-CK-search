@@ -18,8 +18,13 @@ Description:
     can also include the creation of accounts with email providers, which may be directly
     leveraged for Phishing for Information or Phishing.[3]'
 Information:
+  ID: T1585
   Sub-techniques:
   - T1585.001
   - T1585.002
   - T1585.003
   Tactic: Resource Development
+  Platforms: PRE
+  Version: '1.2'
+  Created: 01 October 2020
+  Last Modified: 16 October 2021

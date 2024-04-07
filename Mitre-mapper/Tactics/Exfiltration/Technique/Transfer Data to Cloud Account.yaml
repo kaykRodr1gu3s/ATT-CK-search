@@ -13,5 +13,11 @@ Description:
     over external network interfaces.Incidents have been observed where adversaries
     have created backups of cloud instances and transferred them to separate accounts.[1] '
 Information:
+  ID: T1537
   Sub-techniques: []
   Tactic: Exfiltration
+  Platforms: IaaS
+  Contributors: Darin Smith, Cisco; ExtraHop; Praetorian
+  Version: '1.3'
+  Created: 30 August 2019
+  Last Modified: 16 June 2022

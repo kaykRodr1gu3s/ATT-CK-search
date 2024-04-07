@@ -14,6 +14,7 @@ Description:
     resources (ex: Acquire Infrastructure or Compromise Infrastructure), and/or initial
     access (ex: Trusted Relationship).'
 Information:
+  ID: T1590
   Sub-techniques:
   - T1590.001
   - T1590.002
@@ -22,3 +23,7 @@ Information:
   - T1590.005
   - T1590.006
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.0'
+  Created: 02 October 2020
+  Last Modified: 15 April 2021

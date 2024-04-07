@@ -8,5 +8,12 @@ Description:
     from the current system prior to Exfiltration. Interactive command shells may
     be in use, and common functionality within cmd may be used to gather information.
 Information:
+  ID: T1039
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  System Requirements: Privileges to access network shared drive
+  Contributors: David Tayouri
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 11 August 2023

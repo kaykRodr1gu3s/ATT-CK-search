@@ -14,6 +14,15 @@ Description:
     may also attempt to infer the location of a victim host using IP addressing, such
     as via online geolocation IP-lookup services.[6][2]
 Information:
+  ID: T1614
   Sub-techniques:
   - T1614.001
   Tactic: Discovery
+  Platforms: IaaS, Linux, Windows, macOS
+  Permissions Required: User
+  Contributors: Hiroki Nagahama, NEC Corporation; Katie Nickels, Red Canary; Manikantan
+    Srinivasan, NEC Corporation India; Pooja Natarajan, NEC Corporation India; Wes
+    Hurd
+  Version: '1.0'
+  Created: 01 April 2021
+  Last Modified: 15 October 2021

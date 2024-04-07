@@ -14,8 +14,13 @@ Description:
     or Obtain Capabilities), and/or initial access (ex: External Remote Services or
     Exploit Public-Facing Application).'
 Information:
+  ID: T1595
   Sub-techniques:
   - T1595.001
   - T1595.002
   - T1595.003
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.0'
+  Created: 02 October 2020
+  Last Modified: 08 March 2022

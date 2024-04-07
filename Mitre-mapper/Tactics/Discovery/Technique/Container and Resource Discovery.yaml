@@ -13,5 +13,12 @@ Description:
     \ the environment, such as how to perform lateral movement and which methods to\
     \ utilize for execution. "
 Information:
+  ID: T1613
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Containers
+  Contributors: Center for Threat-Informed Defense (CTID); Vishwas Manral, McAfee;
+    Yossi Weizman, Azure Defender Research Team
+  Version: '1.1'
+  Created: 31 March 2021
+  Last Modified: 15 April 2023

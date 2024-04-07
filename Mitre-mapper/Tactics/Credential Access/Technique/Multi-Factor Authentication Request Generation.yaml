@@ -14,5 +14,12 @@ Description:
     resulting in the user finally accepting the authentication request in response
     to "MFA fatigue."[1][2][3]
 Information:
+  ID: T1621
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: Jon Sternstein, Stern Security; Pawel Partyka, Microsoft 365 Defender;
+    Shanief Webb
+  Version: '1.0'
+  Created: 01 April 2022
+  Last Modified: 04 April 2023

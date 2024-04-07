@@ -16,6 +16,7 @@ Description:
     This can include stealing software licenses, malware, SSL/TLS and code-signing
     certificates, or raiding closed databases of vulnerabilities or exploits.[3]
 Information:
+  ID: T1588
   Sub-techniques:
   - T1588.001
   - T1588.002
@@ -24,3 +25,7 @@ Information:
   - T1588.005
   - T1588.006
   Tactic: Resource Development
+  Platforms: PRE
+  Version: '1.1'
+  Created: 01 October 2020
+  Last Modified: 18 October 2021

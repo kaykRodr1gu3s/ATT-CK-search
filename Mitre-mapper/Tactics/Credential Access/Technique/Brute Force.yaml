@@ -15,9 +15,18 @@ Description:
     Adversaries may also combine brute forcing activity with behaviors such as External
     Remote Services as part of Initial Access.
 Information:
+  ID: T1110
   Sub-techniques:
   - T1110.001
   - T1110.002
   - T1110.003
   - T1110.004
   Tactic: Credential Access
+  Platforms: Azure AD, Containers, Google Workspace, IaaS, Linux, Network, Office
+    365, SaaS, Windows, macOS
+  Contributors: Alfredo Oliveira, Trend Micro; David Fiser, @anu4is, Trend Micro;
+    Ed Williams, Trustwave, SpiderLabs; Magno Logan, @magnologan, Trend Micro; Mohamed
+    Kmal; Yossi Weizman, Azure Defender Research Team
+  Version: '2.5'
+  Created: 31 May 2017
+  Last Modified: 14 April 2023

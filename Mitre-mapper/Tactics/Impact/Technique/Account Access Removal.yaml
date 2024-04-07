@@ -14,5 +14,12 @@ Description:
     to impede incident response/recovery before completing the Data Encrypted for
     Impact objective. '
 Information:
+  ID: T1531
   Sub-techniques: []
   Tactic: Impact
+  Platforms: Linux, Office 365, SaaS, Windows, macOS
+  Impact Type: Availability
+  Contributors: Hubert Mank
+  Version: '1.2'
+  Created: 09 October 2019
+  Last Modified: 22 March 2023

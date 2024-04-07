@@ -2,15 +2,26 @@ import pandas as pd
 import os
 import yaml
 
-print(os.getcwd())
-os.chdir("Mitre-mapper\\Tactics")
 class file_writer:
-    def file_creator(self,tactic_datas, technique_datas):
+    """
+    This class will create the yaml files, the yaml files will be pass as argument on file_creator function.
+    """
+
+    def file_creator(self,tactic_datas: list, technique_datas: list):
+        """
+        This function will create the yaml files, the argumens must be lists 
+        """
+
+        os.chdir("Mitre-mapper\\Tactics")
         folders = os.listdir()
+
         df = pd.DataFrame(technique_datas)
+        
         for folder in folders:
+
             os.chdir(folder)
             os.mkdir("Technique")
+            
             with open(f"{folder}.yaml", 'w') as file:
                 yaml.dump(tactic_datas[folder], file, sort_keys=False)
 

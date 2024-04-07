@@ -26,5 +26,12 @@ Description:
     may also attempt to tamper with sensors and defensive tools associated with API
     monitoring, such as unhooking monitored functions via Disable or Modify Tools.
 Information:
+  ID: T1106
   Sub-techniques: []
   Tactic: Execution
+  Platforms: Linux, Windows, macOS
+  Contributors: Gordon Long, Box, Inc., @ethicalhax; Stefan Kanthak; Tristan Madani
+    (Cybereason)
+  Version: '2.2'
+  Created: 31 May 2017
+  Last Modified: 13 October 2023

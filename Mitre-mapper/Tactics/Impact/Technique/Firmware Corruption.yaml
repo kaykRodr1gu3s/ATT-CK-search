@@ -14,5 +14,11 @@ Description:
     inoperable.[2][3] Depending on the device, this attack may also result in Data
     Destruction. '
 Information:
+  ID: T1495
   Sub-techniques: []
   Tactic: Impact
+  Platforms: Linux, Network, Windows, macOS
+  Impact Type: Availability
+  Version: '1.2'
+  Created: 12 April 2019
+  Last Modified: 31 August 2022

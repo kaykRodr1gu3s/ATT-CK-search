@@ -19,5 +19,12 @@ Description:
     relationships or send new delegated administrator offers to clients in order to
     gain administrative control over the victim tenant.[2]
 Information:
+  ID: T1199
   Sub-techniques: []
   Tactic: Initial Access
+  Platforms: IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: "ExtraHop; Jannie Li, Microsoft Threat Intelligence\u202FCenter\u202F\
+    (MSTIC); Praetorian"
+  Version: '2.3'
+  Created: 18 April 2018
+  Last Modified: 21 October 2022

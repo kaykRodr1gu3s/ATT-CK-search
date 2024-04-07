@@ -12,8 +12,14 @@ Description:
     be gained through a prolonged information gathering campaign in order to have
     the desired impact.
 Information:
+  ID: T1565
   Sub-techniques:
   - T1565.001
   - T1565.002
   - T1565.003
   Tactic: Impact
+  Platforms: Linux, Windows, macOS
+  Impact Type: Integrity
+  Version: '1.1'
+  Created: 02 March 2020
+  Last Modified: 19 April 2022

@@ -11,5 +11,11 @@ Description:
     to enumerate objects stored within cloud storage. Examples include ListObjectsV2
     in AWS [1] and List Blobs in Azure[2] .
 Information:
+  ID: T1619
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: IaaS
+  Contributors: Isif Ibrahima, Mandiant; Regina Elwell
+  Version: '1.0'
+  Created: 01 October 2021
+  Last Modified: 11 April 2022

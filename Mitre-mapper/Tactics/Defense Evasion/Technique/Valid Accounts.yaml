@@ -20,9 +20,27 @@ Description:
     across accounts and systems to reach a high level of access (i.e., domain or enterprise
     administrator) to bypass access controls set within the enterprise.[3]'
 Information:
+  ID: T1078
   Sub-techniques:
   - T1078.001
   - T1078.002
   - T1078.003
   - T1078.004
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Persistence
+  - Privilege Escalation
+  - Initial Access
+  Platforms: Azure AD, Containers, Google Workspace, IaaS, Linux, Network, Office
+    365, SaaS, Windows, macOS
+  Permissions Required: Administrator, User
+  Effective Permissions: Administrator, User
+  Defense Bypassed: Anti-virus, Application Control, Firewall, Host Intrusion Prevention
+    Systems, Network Intrusion Detection System, System Access Controls
+  Contributors: Goldstein Menachem; Jon Sternstein, Stern Security; Mark Wee; Netskope;
+    Praetorian; Prasad Somasamudram, McAfee; Sekhar Sarukkai, McAfee; Syed Ummar Farooqh,
+    McAfee; Yossi Weizman, Azure Defender Research Team
+  Version: '2.6'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

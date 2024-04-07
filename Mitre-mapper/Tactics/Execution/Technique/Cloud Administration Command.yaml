@@ -15,5 +15,12 @@ Description:
     \ be able to leverage a Trusted Relationship to execute commands in connected\
     \ virtual machines.[4]"
 Information:
+  ID: T1651
   Sub-techniques: []
   Tactic: Execution
+  Platforms: Azure AD, IaaS
+  Contributors: Adrien Bataille; Anders Vejlby; Caio Silva; Cisco; Jared Wilson; Nader
+    Zaveri; Nichols Jasper
+  Version: '1.0'
+  Created: 13 March 2023
+  Last Modified: 14 April 2023

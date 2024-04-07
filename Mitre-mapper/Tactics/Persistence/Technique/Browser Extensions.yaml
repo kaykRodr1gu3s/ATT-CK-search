@@ -24,5 +24,11 @@ Description:
     a persistent backdoor through malicious Chrome extensions.[9] There have also
     been similar examples of extensions being used for command & control.[10]
 Information:
+  ID: T1176
   Sub-techniques: []
   Tactic: Persistence
+  Platforms: Linux, Windows, macOS
+  Contributors: Chris Ross @xorrior; Justin Warner, ICEBRG
+  Version: '1.2'
+  Created: 16 January 2018
+  Last Modified: 20 April 2022

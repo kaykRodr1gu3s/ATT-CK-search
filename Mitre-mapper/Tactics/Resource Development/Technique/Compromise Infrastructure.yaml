@@ -18,6 +18,7 @@ Description:
     adversaries may make it difficult to tie their actions back to them. Prior to
     targeting, adversaries may compromise the infrastructure of other adversaries.[8]
 Information:
+  ID: T1584
   Sub-techniques:
   - T1584.001
   - T1584.002
@@ -27,3 +28,8 @@ Information:
   - T1584.006
   - T1584.007
   Tactic: Resource Development
+  Platforms: PRE
+  Contributors: Goldstein Menachem; Jeremy Galloway; Shailesh Tiwary (Indian Army)
+  Version: '1.4'
+  Created: 01 October 2020
+  Last Modified: 02 October 2023

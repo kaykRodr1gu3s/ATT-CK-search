@@ -24,9 +24,17 @@ Description:
     emails or metadata/headers from compromised accounts being abused to send messages
     (e.g., Email Hiding Rules).[9][10]'
 Information:
+  ID: T1598
   Sub-techniques:
   - T1598.001
   - T1598.002
   - T1598.003
   - T1598.004
   Tactic: Reconnaissance
+  Platforms: PRE
+  Contributors: Liora Itkin; Liran Ravich, CardinalOps; Ohad Zaidenberg, @ohad_mz;
+    Philip Winther; Robert Simmons, @MalwareUtkonos; Scott Cook, Capital One; Sebastian
+    Salla, McAfee
+  Version: '1.3'
+  Created: 02 October 2020
+  Last Modified: 08 September 2023

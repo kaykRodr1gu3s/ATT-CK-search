@@ -20,5 +20,12 @@ Description:
     and logging into the service's web portal, an adversary may be able to trigger
     an automatic syncing process that transfers the file onto the victim's machine.[3]
 Information:
+  ID: T1105
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Contributors: Alain Homewood; John Page (aka hyp3rlinx), ApparitionSec; Mark Wee;
+    Shailesh Tiwary (Indian Army); The DFIR Report
+  Version: '2.3'
+  Created: 31 May 2017
+  Last Modified: 03 October 2023

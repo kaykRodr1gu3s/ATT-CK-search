@@ -36,5 +36,12 @@ Description:
     tokens, to gain access to protected applications and information. These malicious
     applications have been delivered through popups on legitimate websites.[2]
 Information:
+  ID: T1189
   Sub-techniques: []
   Tactic: Initial Access
+  Platforms: Linux, SaaS, Windows, macOS
+  Contributors: Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM
+    Services); Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)
+  Version: '1.5'
+  Created: 18 April 2018
+  Last Modified: 14 April 2023

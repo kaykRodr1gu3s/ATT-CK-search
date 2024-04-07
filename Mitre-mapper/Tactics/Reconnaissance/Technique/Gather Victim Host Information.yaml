@@ -16,9 +16,14 @@ Description:
     operational resources (ex: Develop Capabilities or Obtain Capabilities), and/or
     initial access (ex: Supply Chain Compromise or External Remote Services).'
 Information:
+  ID: T1592
   Sub-techniques:
   - T1592.001
   - T1592.002
   - T1592.003
   - T1592.004
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.1'
+  Created: 02 October 2020
+  Last Modified: 17 October 2021

@@ -10,9 +10,15 @@ Description:
     these services.Web service providers also commonly use SSL/TLS encryption, giving
     adversaries an added level of protection.
 Information:
+  ID: T1567
   Sub-techniques:
   - T1567.001
   - T1567.002
   - T1567.003
   - T1567.004
   Tactic: Exfiltration
+  Platforms: Google Workspace, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: William Cain
+  Version: '1.3'
+  Created: 09 March 2020
+  Last Modified: 05 September 2023

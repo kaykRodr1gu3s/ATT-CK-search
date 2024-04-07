@@ -16,6 +16,7 @@ Description:
     may also execute commands through interactive terminals/shells, as well as utilize
     various Remote Services in order to achieve remote Execution.[1][2][3]
 Information:
+  ID: T1059
   Sub-techniques:
   - T1059.001
   - T1059.002
@@ -27,3 +28,9 @@ Information:
   - T1059.008
   - T1059.009
   Tactic: Execution
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Network, Office 365, Windows,
+    macOS
+  Supports Remote: ' Yes'
+  Version: '2.4'
+  Created: 31 May 2017
+  Last Modified: 27 March 2023

@@ -15,5 +15,11 @@ Description:
     as well as opportunities to manipulate Group Policy settings (i.e. Domain Policy
     Modification) for their benefit.
 Information:
+  ID: T1615
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Windows
+  Contributors: Jonhnathan Ribeiro, 3CORESec, @_w0rk3r; Ted Samuels, Rapid7
+  Version: '1.1'
+  Created: 06 August 2021
+  Last Modified: 06 January 2023

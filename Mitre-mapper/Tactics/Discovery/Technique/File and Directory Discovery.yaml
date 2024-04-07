@@ -13,5 +13,13 @@ Description:
     devices to gather file and directory information (e.g. dir, show flash, and/or
     nvram).[2]
 Information:
+  ID: T1083
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Linux, Network, Windows, macOS
+  System Requirements: Some folders may require Administrator, SYSTEM or specific
+    user depending on permission levels and access controls
+  Contributors: Austin Clark, @c2defense
+  Version: '1.5'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

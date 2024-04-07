@@ -19,6 +19,7 @@ Description:
     acquired SSL/TLS certificate to use to encrypt command and control traffic (ex:
     Asymmetric Cryptography with Web Protocols).[11]'
 Information:
+  ID: T1608
   Sub-techniques:
   - T1608.001
   - T1608.002
@@ -27,3 +28,7 @@ Information:
   - T1608.005
   - T1608.006
   Tactic: Resource Development
+  Platforms: PRE
+  Version: '1.2'
+  Created: 17 March 2021
+  Last Modified: 19 October 2022

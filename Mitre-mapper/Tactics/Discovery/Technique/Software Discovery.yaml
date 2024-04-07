@@ -11,6 +11,12 @@ Description:
     system has a version of software that is vulnerable to Exploitation for Privilege
     Escalation.
 Information:
+  ID: T1518
   Sub-techniques:
   - T1518.001
   Tactic: Discovery
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Permissions Required: Administrator, User
+  Version: '1.3'
+  Created: 16 September 2019
+  Last Modified: 30 March 2023

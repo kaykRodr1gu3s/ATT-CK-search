@@ -11,7 +11,13 @@ Description:
     Hijacking differs from use of Remote Services because it hijacks an existing session
     rather than creating a new session using Valid Accounts.[1][2]
 Information:
+  ID: T1563
   Sub-techniques:
   - T1563.001
   - T1563.002
   Tactic: Lateral Movement
+  Platforms: Linux, Windows, macOS
+  Permissions Required: SYSTEM, root
+  Version: '1.0'
+  Created: 25 February 2020
+  Last Modified: 23 March 2020

@@ -13,5 +13,13 @@ Description:
     Lateral Tool Transfer to identify and move files, as well as Cloud Service Dashboard
     and Cloud Storage Object Discovery to identify resources in cloud environments.
 Information:
+  ID: T1119
   Sub-techniques: []
   Tactic: Collection
+  Platforms: IaaS, Linux, SaaS, Windows, macOS
+  System Requirements: Permissions to access directories, files, and API endpoints
+    that store information of interest.
+  Contributors: Praetorian
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 11 April 2022

@@ -10,5 +10,10 @@ Description:
     may gather information through native system features such as Command and Scripting
     Interpreter commands and Native API functions.
 Information:
+  ID: T1010
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Linux, Windows, macOS
+  Version: '1.3'
+  Created: 31 May 2017
+  Last Modified: 15 April 2023

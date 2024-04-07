@@ -34,5 +34,14 @@ Description:
     \ However, in some cases, adversaries can also steal application refresh tokens[9],\
     \ allowing them to obtain new access tokens without prompting the user.  "
 Information:
+  ID: T1528
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Azure AD, Containers, Google Workspace, Office 365, SaaS
+  Contributors: Jack Burns, HubSpot; Jeff Sakowicz, Microsoft Identity Developer Platform
+    Services (IDPM Services); Mark Wee; Ram Pliskin, Microsoft Azure Security Center;
+    Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC); Shailesh Tiwary (Indian
+    Army); Suzy Schapperle - Microsoft Azure Red Team
+  Version: '1.2'
+  Created: 04 September 2019
+  Last Modified: 19 September 2023

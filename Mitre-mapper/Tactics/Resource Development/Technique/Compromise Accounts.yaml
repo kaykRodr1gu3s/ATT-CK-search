@@ -20,8 +20,13 @@ Description:
     photos.Adversaries may directly leverage compromised email accounts for Phishing
     for Information or Phishing.'
 Information:
+  ID: T1586
   Sub-techniques:
   - T1586.001
   - T1586.002
   - T1586.003
   Tactic: Resource Development
+  Platforms: PRE
+  Version: '1.2'
+  Created: 01 October 2020
+  Last Modified: 11 April 2023

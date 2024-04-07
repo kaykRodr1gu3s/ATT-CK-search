@@ -21,5 +21,13 @@ Description:
     of financial theft and seeking monetary gain to divert attention from their true
     goals such as Data Destruction and business disruption.[10]
 Information:
+  ID: T1657
   Sub-techniques: []
   Tactic: Impact
+  Platforms: Google Workspace, Linux, Office 365, SaaS, Windows, macOS
+  Impact Type: Availability
+  Contributors: Blake Strom, Microsoft Threat Intelligence; Pawel Partyka, Microsoft
+    Threat Intelligence
+  Version: '1.0'
+  Created: 18 August 2023
+  Last Modified: 30 September 2023

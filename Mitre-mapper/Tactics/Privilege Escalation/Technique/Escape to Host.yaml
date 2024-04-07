@@ -22,5 +22,17 @@ Description:
     \ establishing persistence, moving laterally within the environment, or setting\
     \ up a command and control channel on the host."
 Information:
+  ID: T1611
   Sub-techniques: []
   Tactic: Privilege Escalation
+  Platforms: Containers, Linux, Windows
+  Permissions Required: Administrator, User, root
+  Contributors: Alfredo Oliveira, Trend Micro; Ariel Shuper, Cisco; CrowdStrike; Daniel
+    Prizmant, Palo Alto Networks; David Fiser, @anu4is, Trend Micro; Eran Ayalon,
+    Cybereason; Idan Frimark, Cisco; Ilan Sokol, Cybereason; Joas Antonio dos Santos,
+    @C0d3Cr4zy, Inmetrics; Magno Logan, @magnologan, Trend Micro; Oren Ofer, Cybereason;
+    Vishwas Manral, McAfee; Yossi Weizman, Azure Defender Research Team; Yuval Avrahami,
+    Palo Alto Networks
+  Version: '1.4'
+  Created: 30 March 2021
+  Last Modified: 15 April 2023

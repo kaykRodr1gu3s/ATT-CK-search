@@ -12,5 +12,10 @@ Description:
     whether or not the adversary fully infects the target and/or attempts specific
     actions.
 Information:
+  ID: T1012
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Windows
+  Version: '1.3'
+  Created: 31 May 2017
+  Last Modified: 03 April 2023

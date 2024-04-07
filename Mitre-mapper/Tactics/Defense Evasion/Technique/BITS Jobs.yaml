@@ -19,5 +19,16 @@ Description:
     completes or errors (including after system reboots).[7][4]BITS upload functionalities
     can also be used to perform Exfiltration Over Alternative Protocol.[4]
 Information:
+  ID: T1197
   Sub-techniques: []
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Persistence
+  Platforms: Windows
+  Defense Bypassed: Firewall, Host forensic analysis
+  Contributors: Brent Murphy, Elastic; David French, Elastic; Red Canary; Ricardo
+    Dias
+  Version: '1.4'
+  Created: 18 April 2018
+  Last Modified: 21 April 2023

@@ -14,9 +14,14 @@ Description:
     establishing operational resources (ex: Establish Accounts or Compromise Accounts),
     and/or initial access (ex: Phishing or Trusted Relationship).'
 Information:
+  ID: T1591
   Sub-techniques:
   - T1591.001
   - T1591.002
   - T1591.003
   - T1591.004
   Tactic: Reconnaissance
+  Platforms: PRE
+  Version: '1.1'
+  Created: 02 October 2020
+  Last Modified: 27 August 2021

@@ -8,5 +8,10 @@ Description:
     techniques likely apply as well to transfer the information out of the network,
     such as Exfiltration Over C2 Channel or Exfiltration Over Alternative Protocol.
 Information:
+  ID: T1029
   Sub-techniques: []
   Tactic: Exfiltration
+  Platforms: Linux, Windows, macOS
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 28 March 2020

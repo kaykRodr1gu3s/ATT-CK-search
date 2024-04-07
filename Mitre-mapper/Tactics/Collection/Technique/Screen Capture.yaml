@@ -8,5 +8,10 @@ Description:
     a screenshot is also typically possible through native utilities or API calls,
     such as CopyFromScreen, xwd, or screencapture.[1][2]
 Information:
+  ID: T1113
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

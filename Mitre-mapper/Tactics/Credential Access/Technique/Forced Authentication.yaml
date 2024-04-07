@@ -32,5 +32,11 @@ Description:
     the system to load the resource when the icon is rendered to repeatedly gather
     credentials. [7]
 Information:
+  ID: T1187
   Sub-techniques: []
   Tactic: Credential Access
+  Platforms: Windows
+  Contributors: Sudhanshu Chauhan, @Sudhanshu_C; Teodor Cimpoesu
+  Version: '1.3'
+  Created: 16 January 2018
+  Last Modified: 14 August 2023

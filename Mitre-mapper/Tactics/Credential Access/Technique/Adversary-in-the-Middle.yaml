@@ -21,8 +21,18 @@ Description:
     destination, potentially to Impair Defenses and/or in support of a Network Denial
     of Service.
 Information:
+  ID: T1557
   Sub-techniques:
   - T1557.001
   - T1557.002
   - T1557.003
   Tactic: Credential Access
+  All tactics:
+  - Credential Access
+  - Collection
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Daniil Yugoslavskiy, @yugoslavskiy, Atomic Threat Coverage project;
+    Mayuresh Dani, Qualys; NEC
+  Version: '2.3'
+  Created: 11 February 2020
+  Last Modified: 27 September 2023

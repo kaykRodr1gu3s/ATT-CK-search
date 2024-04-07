@@ -19,5 +19,11 @@ Description:
     to "net session". Additionally, built-in features native to network devices and
     Network Device CLI may be used (e.g. show ip sockets, show tcp brief).[4]
 Information:
+  ID: T1049
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: IaaS, Linux, Network, Windows, macOS
+  Contributors: Austin Clark, @c2defense; Praetorian
+  Version: '2.4'
+  Created: 31 May 2017
+  Last Modified: 06 September 2022

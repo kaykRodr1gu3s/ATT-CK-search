@@ -9,8 +9,13 @@ Description:
     This encompasses many methods, such as adding junk data to protocol traffic, using
     steganography, or impersonating legitimate protocols. '
 Information:
+  ID: T1001
   Sub-techniques:
   - T1001.001
   - T1001.002
   - T1001.003
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.1'
+  Created: 31 May 2017
+  Last Modified: 15 March 2020

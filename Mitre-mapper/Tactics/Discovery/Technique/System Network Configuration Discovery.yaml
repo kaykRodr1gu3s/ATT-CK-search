@@ -13,7 +13,13 @@ Description:
     Discovery during automated discovery to shape follow-on behaviors, including determining
     certain access within the target network and what actions to do next. '
 Information:
+  ID: T1016
   Sub-techniques:
   - T1016.001
   - T1016.002
   Tactic: Discovery
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Austin Clark, @c2defense
+  Version: '1.6'
+  Created: 31 May 2017
+  Last Modified: 28 July 2023

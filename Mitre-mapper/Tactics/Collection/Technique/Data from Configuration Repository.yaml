@@ -11,7 +11,12 @@ Description:
     and software and can store a wide variety of data, much of which may align with
     adversary Discovery objectives.[1][2]
 Information:
+  ID: T1602
   Sub-techniques:
   - T1602.001
   - T1602.002
   Tactic: Collection
+  Platforms: Network
+  Version: '1.0'
+  Created: 19 October 2020
+  Last Modified: 19 April 2022

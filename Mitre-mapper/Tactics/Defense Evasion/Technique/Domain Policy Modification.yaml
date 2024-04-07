@@ -21,7 +21,17 @@ Description:
     modify domain policy, carry out a malicious action(s), and then revert the change
     to remove suspicious indicators.'
 Information:
+  ID: T1484
   Sub-techniques:
   - T1484.001
   - T1484.002
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Privilege Escalation
+  Platforms: Azure AD, Windows
+  Permissions Required: Administrator, User
+  Defense Bypassed: File system access controls, System access controls
+  Version: '2.0'
+  Created: 07 March 2019
+  Last Modified: 09 February 2021

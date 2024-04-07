@@ -13,7 +13,13 @@ Description:
     to minimize the number of connections made to their C2 server and better evade
     detection.
 Information:
+  ID: T1074
   Sub-techniques:
   - T1074.001
   - T1074.002
   Tactic: Collection
+  Platforms: IaaS, Linux, Windows, macOS
+  Contributors: Praetorian; Shane Tully, @securitygypsy
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 20 July 2022

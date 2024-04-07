@@ -14,9 +14,14 @@ Description:
     capabilities, provided the adversary plays a role in shaping requirements and
     maintains a degree of exclusivity to the capability.
 Information:
+  ID: T1587
   Sub-techniques:
   - T1587.001
   - T1587.002
   - T1587.003
   - T1587.004
   Tactic: Resource Development
+  Platforms: PRE
+  Version: '1.1'
+  Created: 01 October 2020
+  Last Modified: 17 October 2021

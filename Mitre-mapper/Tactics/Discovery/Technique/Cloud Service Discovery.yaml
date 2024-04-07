@@ -21,5 +21,12 @@ Description:
     identified defenses through Disable or Modify Tools or Disable or Modify Cloud
     Logs.
 Information:
+  ID: T1526
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Azure AD, Google Workspace, IaaS, Office 365, SaaS
+  Contributors: Praetorian; Suzy Schapperle - Microsoft Azure Red Team; Thanabodi
+    Phrakhun, I-SECURE
+  Version: '1.3'
+  Created: 30 August 2019
+  Last Modified: 04 May 2023

@@ -15,8 +15,15 @@ Description:
     underlying IPC mechanisms. Adversaries may also use Remote Services such as Distributed
     Component Object Model to facilitate remote IPC execution.[2]
 Information:
+  ID: T1559
   Sub-techniques:
   - T1559.001
   - T1559.002
   - T1559.003
   Tactic: Execution
+  Platforms: Linux, Windows, macOS
+  Permissions Required: Administrator, SYSTEM, User
+  Supports Remote: ' Yes'
+  Version: '1.2'
+  Created: 12 February 2020
+  Last Modified: 11 March 2022

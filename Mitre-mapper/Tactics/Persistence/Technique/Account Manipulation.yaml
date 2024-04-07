@@ -13,6 +13,7 @@ Description:
     escalation where modifications grant access to additional roles, permissions,
     or higher-privileged Valid Accounts.
 Information:
+  ID: T1098
   Sub-techniques:
   - T1098.001
   - T1098.002
@@ -21,3 +22,13 @@ Information:
   - T1098.005
   - T1098.006
   Tactic: Persistence
+  All tactics:
+  - Persistence
+  - Privilege Escalation
+  Platforms: Azure AD, Containers, Google Workspace, IaaS, Linux, Network, Office
+    365, SaaS, Windows, macOS
+  Contributors: "Arad Inbar, Fidelis Security; Jannie Li, Microsoft Threat Intelligence\u202F\
+    Center\u202F(MSTIC); Praetorian; Tim MalcomVetter; Wojciech Lesicki"
+  Version: '2.6'
+  Created: 31 May 2017
+  Last Modified: 16 October 2023

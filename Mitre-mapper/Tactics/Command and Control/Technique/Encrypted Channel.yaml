@@ -8,7 +8,12 @@ Description:
     vulnerable to reverse engineering if secret keys are encoded and/or generated
     within malware samples/configuration files.
 Information:
+  ID: T1573
   Sub-techniques:
   - T1573.001
   - T1573.002
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 16 March 2020
+  Last Modified: 20 April 2021

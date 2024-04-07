@@ -14,9 +14,16 @@ Description:
     \ command line functionality to identify accounts. Information about email addresses\
     \ and accounts may also be extracted by searching an infected system\u2019s files."
 Information:
+  ID: T1087
   Sub-techniques:
   - T1087.001
   - T1087.002
   - T1087.003
   - T1087.004
   Tactic: Discovery
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Office 365, SaaS, Windows, macOS
+  Contributors: Daniel Stepanic, Elastic; Microsoft Threat Intelligence Center (MSTIC);
+    Travis Smith, Tripwire
+  Version: '2.4'
+  Created: 31 May 2017
+  Last Modified: 15 April 2023

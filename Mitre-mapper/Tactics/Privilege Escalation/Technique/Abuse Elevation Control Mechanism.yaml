@@ -10,6 +10,7 @@ Description:
     methods to take advantage of built-in control mechanisms in order to escalate
     privileges on a system.
 Information:
+  ID: T1548
   Sub-techniques:
   - T1548.001
   - T1548.002
@@ -17,3 +18,11 @@ Information:
   - T1548.004
   - T1548.005
   Tactic: Privilege Escalation
+  All tactics:
+  - Privilege Escalation
+  - Defense Evasion
+  Platforms: Azure AD, Google Workspace, IaaS, Linux, Office 365, Windows, macOS
+  Permissions Required: Administrator, User
+  Version: '1.2'
+  Created: 30 January 2020
+  Last Modified: 02 October 2023

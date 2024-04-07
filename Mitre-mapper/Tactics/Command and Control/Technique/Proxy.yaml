@@ -14,9 +14,15 @@ Description:
     traffic.Adversaries can also take advantage of routing schemes in Content Delivery
     Networks (CDNs) to proxy command and control traffic.
 Information:
+  ID: T1090
   Sub-techniques:
   - T1090.001
   - T1090.002
   - T1090.003
   - T1090.004
   Tactic: Command and Control
+  Platforms: Linux, Network, Windows, macOS
+  Contributors: Heather Linn; Jon Sheedy; Walker Johnson
+  Version: '3.1'
+  Created: 31 May 2017
+  Last Modified: 30 August 2021

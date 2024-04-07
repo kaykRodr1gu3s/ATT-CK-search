@@ -14,5 +14,10 @@ Description:
     keystroke injection, kernel memory reading via DMA, addition of new wireless access
     to an existing network, and others.[1][2][3][4]
 Information:
+  ID: T1200
   Sub-techniques: []
   Tactic: Initial Access
+  Platforms: Linux, Windows, macOS
+  Version: '1.6'
+  Created: 18 April 2018
+  Last Modified: 30 March 2023

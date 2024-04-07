@@ -9,7 +9,13 @@ Description:
     binary-to-text and character encoding systems.[1] [2] Some data encoding systems
     may also result in data compression, such as gzip.
 Information:
+  ID: T1132
   Sub-techniques:
   - T1132.001
   - T1132.002
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Contributors: Itzik Kotler, SafeBreach
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 21 April 2023

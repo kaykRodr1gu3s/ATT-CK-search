@@ -10,5 +10,10 @@ Description:
     from the disconnected system to the Internet-connected system to which the adversary
     has direct access.
 Information:
+  ID: T1092
   Sub-techniques: []
   Tactic: Command and Control
+  Platforms: Linux, Windows, macOS
+  Version: '1.0'
+  Created: 31 May 2017
+  Last Modified: 14 July 2020

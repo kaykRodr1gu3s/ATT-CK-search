@@ -13,5 +13,12 @@ Description:
     The Windows utility Nltest is known to be used by adversaries to enumerate domain
     trusts.[4]
 Information:
+  ID: T1482
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: Windows
+  Contributors: Dave Westgard; Elia Florio, Microsoft; ExtraHop; Mnemonic; RedHuntLabs,
+    @redhuntlabs
+  Version: '1.2'
+  Created: 14 February 2019
+  Last Modified: 16 June 2022

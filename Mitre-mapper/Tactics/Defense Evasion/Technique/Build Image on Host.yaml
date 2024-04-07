@@ -14,5 +14,13 @@ Description:
     \ If the base image already resides in a local registry, the pull may be considered\
     \ even less suspicious since the image is already in the environment. "
 Information:
+  ID: T1612
   Sub-techniques: []
   Tactic: Defense Evasion
+  Platforms: Containers
+  Contributors: Assaf Morag, @MoragAssaf, Team Nautilus Aqua Security; Michael Katchinskiy,
+    @michael64194968, Team Nautilus Aqua Security; Roi Kol, @roykol1, Team Nautilus
+    Aqua Security; Vishwas Manral, McAfee
+  Version: '1.3'
+  Created: 30 March 2021
+  Last Modified: 15 April 2023

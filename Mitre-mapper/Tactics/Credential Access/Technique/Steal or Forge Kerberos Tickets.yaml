@@ -34,9 +34,17 @@ Description:
     tools to interact with the ccache files directly or to use the Kerberos framework
     to call lower-level APIs for extracting the user''s TGT or Service Tickets.[7][8]'
 Information:
+  ID: T1558
   Sub-techniques:
   - T1558.001
   - T1558.002
   - T1558.003
   - T1558.004
   Tactic: Credential Access
+  Platforms: Linux, Windows, macOS
+  System Requirements: Kerberos authentication enabled
+  Permissions Required: User, root
+  Contributors: Cody Thomas, SpecterOps; Tim (Wadhwa-)Brown
+  Version: '1.4'
+  Created: 11 February 2020
+  Last Modified: 30 March 2023

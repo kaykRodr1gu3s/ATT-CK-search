@@ -9,5 +9,10 @@ Description:
     \ Data Manipulation).[4]macOS and Linux also have commands, such as pbpaste, to\
     \ grab clipboard contents.[5]"
 Information:
+  ID: T1115
   Sub-techniques: []
   Tactic: Collection
+  Platforms: Linux, Windows, macOS
+  Version: '1.2'
+  Created: 31 May 2017
+  Last Modified: 14 April 2023

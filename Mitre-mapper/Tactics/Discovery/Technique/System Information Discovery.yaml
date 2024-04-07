@@ -20,5 +20,11 @@ Description:
     calls can return data such as the operating system platform and status of a particular
     instance or the model view of a virtual machine.[4][5][6]
 Information:
+  ID: T1082
   Sub-techniques: []
   Tactic: Discovery
+  Platforms: IaaS, Linux, Network, Windows, macOS
+  Contributors: Austin Clark, @c2defense; Maril Vernon @shewhohacks; Praetorian
+  Version: '2.5'
+  Created: 31 May 2017
+  Last Modified: 30 March 2023

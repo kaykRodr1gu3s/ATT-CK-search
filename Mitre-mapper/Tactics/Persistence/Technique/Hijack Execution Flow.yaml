@@ -13,6 +13,7 @@ Description:
     looks for programs/resources, such as file directories and in the case of Windows
     the Registry, could also be poisoned to include malicious payloads.
 Information:
+  ID: T1574
   Sub-techniques:
   - T1574.001
   - T1574.002
@@ -27,3 +28,12 @@ Information:
   - T1574.012
   - T1574.013
   Tactic: Persistence
+  All tactics:
+  - Persistence
+  - Privilege Escalation
+  - Defense Evasion
+  Platforms: Linux, Windows, macOS
+  Defense Bypassed: Anti-virus, Application Control
+  Version: '1.2'
+  Created: 12 March 2020
+  Last Modified: 05 May 2022

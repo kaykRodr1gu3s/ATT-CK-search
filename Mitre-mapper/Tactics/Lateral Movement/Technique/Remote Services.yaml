@@ -21,6 +21,7 @@ Description:
     enables an adversary to accept TCC (Transparency, Consent, and Control) prompts
     without user interaction and gain access to data.[6][7][4]
 Information:
+  ID: T1021
   Sub-techniques:
   - T1021.001
   - T1021.002
@@ -31,3 +32,9 @@ Information:
   - T1021.007
   - T1021.008
   Tactic: Lateral Movement
+  Platforms: IaaS, Linux, Windows, macOS
+  System Requirements: Active remote service accepting connections and valid credentials
+  Contributors: Dan Borges, @1njection
+  Version: '1.4'
+  Created: 31 May 2017
+  Last Modified: 02 June 2023

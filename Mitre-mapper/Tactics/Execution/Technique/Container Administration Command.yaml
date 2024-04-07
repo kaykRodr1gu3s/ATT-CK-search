@@ -12,5 +12,15 @@ Description:
     execution in a container in the cluster via interaction with the Kubernetes API
     server, the kubelet, or by running a command such as kubectl exec.[6]
 Information:
+  ID: T1609
   Sub-techniques: []
   Tactic: Execution
+  Platforms: Containers
+  Supports Remote: ' Yes'
+  Contributors: Alfredo Oliveira, Trend Micro; Brad Geesaman, @bradgeesaman; Center
+    for Threat-Informed Defense (CTID); David Fiser, @anu4is, Trend Micro; Magno Logan,
+    @magnologan, Trend Micro; Vishwas Manral, McAfee; Yossi Weizman, Azure Defender
+    Research Team
+  Version: '1.2'
+  Created: 29 March 2021
+  Last Modified: 15 April 2023

@@ -13,5 +13,18 @@ Description:
     or built malicious images or from benign images that download and execute malicious
     payloads at runtime.[4]
 Information:
+  ID: T1610
   Sub-techniques: []
   Tactic: Defense Evasion
+  All tactics:
+  - Defense Evasion
+  - Execution
+  Platforms: Containers
+  Supports Remote: ' Yes'
+  Contributors: Alfredo Oliveira, Trend Micro; Ariel Shuper, Cisco; Center for Threat-Informed
+    Defense (CTID); Idan Frimark, Cisco; Magno Logan, @magnologan, Trend Micro; Pawan
+    Kinger, @kingerpawan, Trend Micro; Vishwas Manral, McAfee; Yossi Weizman, Azure
+    Defender Research Team
+  Version: '1.2'
+  Created: 29 March 2021
+  Last Modified: 15 April 2023

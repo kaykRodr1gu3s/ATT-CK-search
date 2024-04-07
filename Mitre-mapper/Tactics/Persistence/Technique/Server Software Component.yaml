@@ -8,6 +8,7 @@ Description:
     the functionality of the main application. Adversaries may install malicious components
     to extend and abuse server applications.[1]
 Information:
+  ID: T1505
   Sub-techniques:
   - T1505.001
   - T1505.002
@@ -15,3 +16,7 @@ Information:
   - T1505.004
   - T1505.005
   Tactic: Persistence
+  Platforms: Linux, Network, Windows, macOS
+  Version: '1.4'
+  Created: 28 June 2019
+  Last Modified: 19 October 2022
